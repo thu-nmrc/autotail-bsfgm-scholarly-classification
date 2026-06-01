@@ -34,6 +34,7 @@ Not claimed:
 | `paper/arxiv_scholarly_autotail_bsaux_fgm_20260528/` | arXiv/JASIST-style manuscript source, figures, tables, and artifact manifest. |
 | `paper/arxiv_scholarly_autotail_bsaux_fgm_20260528/tables/*.csv` | Source tables for the paper results. |
 | `paper/arxiv_scholarly_autotail_bsaux_fgm_20260528/figures/*.svg` | Editable figure sources. |
+| `REPRODUCIBILITY.md` | Practical guide for data splits, rerun commands, and reproduction boundaries. |
 | `DATA_AVAILABILITY.md` | Mapping from the paper's data availability statement to repository files. |
 | `docs/repository_publication_plan.md` | What is included, excluded, and still needed for a public GitHub release. |
 | `docs/code_scope_for_paper.md` | Separation between paper-reproduction files, broader platform code, and legacy experiments. |
@@ -74,6 +75,8 @@ tectonic main.tex
 ```
 
 ## Reproducing Experiments
+
+For a practical reproduction guide, see `REPRODUCIBILITY.md`.
 
 The paper-level run identifiers and source tables are listed in:
 

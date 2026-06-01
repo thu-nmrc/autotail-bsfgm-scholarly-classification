@@ -1,42 +1,22 @@
-task_name: tnews_research_v1
+task_name: autotail_bsfgm_scholarly_classification
 output_root: outputs
 registry_path: outputs/runs.duckdb
 artifacts_dir: outputs/artifacts
 reports_dir: outputs/reports
 method_cards_path: outputs/method_cards.jsonl
 proposals_dir: outputs/proposals
-primary_dataset: tnews
-sanity_dataset: iflytek
+primary_dataset: csl_instruction_discipline_abstract
+sanity_dataset: csl_cls_ctg
 metric_name: accuracy
 lockbox_fraction: 0.1
 lockbox_seed: 3407
-random_seeds: [13, 42, 3407, 2025, 7777]
+random_seeds: [13, 42, 3407]
 max_cost_ratio: 1.5
 validation_delta_threshold: 0.5
 lockbox_delta_threshold: 0.3
 significance_alpha: 0.05
 device_preference: auto
 datasets:
-  tnews:
-    source: huggingface
-    hf_path: clue
-    hf_name: tnews
-    text_field: sentence
-    label_field: label
-    train_split: train
-    validation_split: validation
-    test_split: test
-    max_length: 128
-  iflytek:
-    source: huggingface
-    hf_path: clue
-    hf_name: iflytek
-    text_field: sentence
-    label_field: label
-    train_split: train
-    validation_split: validation
-    test_split: test
-    max_length: 256
   csl_cls_ctg:
     source: local
     local_path: data/csl_cls_ctg
@@ -126,48 +106,6 @@ agent_research:
   paper_sources: [bootstrap, openalex, arxiv, acl_anthology]
   output_dir: outputs/agents
 leaderboards:
-  - task_id: tnews
-    dataset: tnews
-    display_name: CLUE TNEWS
-    benchmark: CLUE
-    metric: accuracy
-    train_rows: 53360
-    validation_rows: 10000
-    test_rows: 10000
-    official_url: https://github.com/CLUEbenchmark/CLUE
-    submission_format: jsonl
-    strong_baseline_name: ALBERT-xxlarge
-    strong_baseline_score: 59.46
-    status: active
-    priority: 100
-    notes: Toutiao short news title classification.
-  - task_id: iflytek
-    dataset: iflytek
-    display_name: CLUE IFLYTEK
-    benchmark: CLUE
-    metric: accuracy
-    official_url: https://github.com/CLUEbenchmark/CLUE
-    submission_format: jsonl
-    strong_baseline_name: RoBERTa-wwm-ext
-    strong_baseline_score: 60.71
-    status: active
-    priority: 90
-    notes: Long app description classification sanity and fallback leaderboard.
-  - task_id: csl_cls_ctg
-    dataset: csl_cls_ctg
-    display_name: CSL Category Classification
-    benchmark: CSL
-    metric: accuracy
-    train_rows: 8000
-    validation_rows: 1000
-    test_rows: 1000
-    official_url: https://github.com/ydli-ai/CSL/tree/master/benchmark/cls_ctg
-    submission_format: local_tsv
-    strong_baseline_name: pending_local_reproduction
-    strong_baseline_score: null
-    status: active
-    priority: 80
-    notes: COLING 2022 CSL title-to-category task; 13 labels and strongly imbalanced train distribution, selected as second long-tail validation task.
   - task_id: csl_instruction_discipline_abstract
     dataset: csl_instruction_discipline_abstract
     display_name: CSL Abstract Discipline Classification
@@ -178,8 +116,23 @@ leaderboards:
     test_rows: 1200
     official_url: https://github.com/ydli-ai/CSL
     submission_format: local_jsonl
-    strong_baseline_name: pending_local_reproduction
+    strong_baseline_name: same-encoder label-smoothing baseline
     strong_baseline_score: null
     status: active
-    priority: 85
-    notes: Abstract-to-67-discipline subset derived from CSL instruction data; added for JASIST-style scholarly metadata validation.
+    priority: 100
+    notes: Abstract-to-67-discipline subset derived from CSL instruction data; primary task for the arXiv paper.
+  - task_id: csl_cls_ctg
+    dataset: csl_cls_ctg
+    display_name: CSL Category Classification
+    benchmark: CSL
+    metric: accuracy
+    train_rows: 8000
+    validation_rows: 1000
+    test_rows: 1000
+    official_url: https://github.com/ydli-ai/CSL/tree/master/benchmark/cls_ctg
+    submission_format: local_tsv
+    strong_baseline_name: same-encoder label-smoothing baseline
+    strong_baseline_score: null
+    status: active
+    priority: 90
+    notes: COLING 2022 CSL title-to-category task; 13 labels and strongly imbalanced train distribution, used as the paper's cross-task validation.

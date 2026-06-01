@@ -55,6 +55,8 @@ Run the test suite:
 uv run pytest
 ```
 
+The tests use toy fixtures and small local artifacts to check that the repository code paths are healthy. They cover dataset loading, lockbox/method-card handling, judging and report generation, traditional-baseline execution, offline literature discovery, proposal/agent utilities, optimizer bookkeeping, and dashboard rendering. They do not train the reported Transformer models and do not reproduce the paper tables by themselves; paper-level reproduction requires running the selected configs below.
+
 Compile the paper:
 
 ```bash

@@ -41,7 +41,7 @@ Approximate local workspace size:
 | `references/` | 4.4 MB | Exclude downloaded PDFs; keep only metadata/notes if needed. |
 | `src/` | 828 KB | Include. |
 | `configs/` | 584 KB | Include only paper-reproduction configs. Exclude earlier TNEWS/IFLYTEK/agent-search configs from the first public commit. |
-| `tests/` | 3.6 MB | Include source tests; exclude `__pycache__` and temp outputs. |
+| `tests/` | 3.6 MB | Include source tests and fixtures as repository health checks; exclude `__pycache__` and temp outputs. The tests do not rerun full paper fine-tuning experiments. |
 
 ## GitHub Remote
 

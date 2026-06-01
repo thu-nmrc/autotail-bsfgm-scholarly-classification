@@ -34,6 +34,7 @@ Not claimed:
 | `paper/arxiv_scholarly_autotail_bsaux_fgm_20260528/` | arXiv/JASIST-style manuscript source, figures, tables, and artifact manifest. |
 | `paper/arxiv_scholarly_autotail_bsaux_fgm_20260528/tables/*.csv` | Source tables for the paper results. |
 | `paper/arxiv_scholarly_autotail_bsaux_fgm_20260528/figures/*.svg` | Editable figure sources. |
+| `tests/` | Lightweight repository health checks for data loading, reporting, dashboards, proposal utilities, and traditional baselines. These tests do not rerun the full paper experiments. |
 | `REPRODUCIBILITY.md` | Practical guide for data splits, rerun commands, and reproduction boundaries. |
 | `DATA_AVAILABILITY.md` | Mapping from the paper's data availability statement to repository files. |
 | `docs/repository_publication_plan.md` | What is included, excluded, and still needed for a public GitHub release. |
@@ -66,6 +67,8 @@ Run tests:
 ```bash
 pytest
 ```
+
+The test suite is a fast repository-level check. It covers toy fixtures, dataset handling, reporting/judging utilities, proposal generation, offline literature discovery, dashboard rendering, optimizer bookkeeping, and a traditional baseline smoke test. It is not a substitute for rerunning the CSL fine-tuning configs listed below.
 
 Compile the paper:
 

@@ -31,6 +31,7 @@ The claim is intentionally bounded:
 - `tables/delta_results.csv`: deltas over same-encoder LS baselines.
 - `tables/per_seed_runs.csv`: per-seed run IDs and metrics.
 - `artifact_manifest.md`: reproducibility and audit files.
+- Public companion repository: https://github.com/thu-nmrc/autotail-bsfgm-scholarly-classification
 
 ## Compile
 
@@ -47,6 +48,6 @@ If using Overleaf or a standard LaTeX installation, compile `main.tex` with BibT
 
 1. Confirm whether the placeholder author `THU-NMRC` should be kept or replaced.
 2. Review the claim boundary in the abstract and conclusion.
-3. Confirm whether code/artifacts will be public, private-on-request, or teacher-only.
+3. Confirm the public companion repository remains available.
 4. Upload `main.tex`, `references.bib`, the four referenced PDF figures, and the generated `tables/*.tex` files to arXiv.
 5. Include CSV tables if submitting a source package with supplementary reproducibility files.

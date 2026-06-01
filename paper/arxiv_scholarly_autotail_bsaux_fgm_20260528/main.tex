@@ -49,6 +49,8 @@ The evidence supports a bounded contribution rather than a leaderboard claim: Au
 
 \noindent\textbf{Keywords:} scholarly text classification; Chinese scientific literature; long-tailed learning; adversarial training; class imbalance; research intelligence
 
+\noindent\textbf{Code and data:} \url{https://github.com/thu-nmrc/autotail-bsfgm-scholarly-classification}
+
 \section{Introduction}
 
 The organization of scientific literature is a core problem in information science. Bibliographic databases, digital libraries, and research intelligence systems rely on reliable classification to support subject indexing, search, trend detection, portfolio analysis, and the study of science itself. Traditional bibliometric and science-of-science work has emphasized citations, publication networks, and field structures \citep{garfield1972citation,narin1976evaluative,bornmann2015growth,fortunato2018science}. More recent systems increasingly combine metadata, abstracts, full text, and language models to characterize research aims, topics, and disciplinary relations \citep{wu2025scaling,beltagy2019scibert,lo2020s2orc}. In this setting, text classification is not only a benchmark exercise. It shapes which documents are retrieved, how emerging areas are grouped, and how small but important fields are represented in downstream analysis.
@@ -304,7 +306,7 @@ The next research step is therefore not to claim a universal breakthrough, but t
 
 \section*{Data Availability Statement}
 
-The experiments use CSL-derived public data and locally generated train, validation, lockbox, and test splits. The accompanying \href{https://github.com/thu-nmrc/autotail-bsfgm-scholarly-classification}{GitHub repository} provides the paper source, generated CSV tables, editable figure sources, run identifiers, experiment configurations, and an artifact manifest indicating the local prediction and run-registry files used to derive the reported values. Model checkpoints and large prediction-level artifacts are not included in the source repository, but they can be regenerated from the recorded configurations.
+The experiments use CSL-derived public data and locally generated train, validation, lockbox, and test splits. The accompanying \href{https://github.com/thu-nmrc/autotail-bsfgm-scholarly-classification}{GitHub repository} provides the paper source, generated CSV tables, editable figure sources, run identifiers, experiment configurations, a reproducibility guide, and an artifact manifest indicating the local prediction and run-registry files used to derive the reported values. Model checkpoints and large prediction-level artifacts are not included in the source repository, but they can be regenerated from the recorded configurations.
 
 \section*{Conflict of Interest Statement}
 

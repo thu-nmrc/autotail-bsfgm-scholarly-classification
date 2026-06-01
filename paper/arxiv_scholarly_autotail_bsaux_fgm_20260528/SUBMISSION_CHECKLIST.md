@@ -4,6 +4,7 @@
 
 - [ ] Confirm whether the placeholder author `THU-NMRC` should be kept or replaced.
 - [ ] Decide whether to list affiliation, email, or acknowledgements.
+- [ ] Confirm companion repository URL is public: `https://github.com/thu-nmrc/autotail-bsfgm-scholarly-classification`.
 - [ ] Recompile after author edits: `tectonic main.tex`.
 - [ ] Review `main.pdf` visually once before upload.
 
@@ -30,6 +31,8 @@ Use `arxiv_source.zip` for arXiv source upload. It contains:
 - `tables/category_delta_analysis.tex`
 
 Do not upload model checkpoints to arXiv.
+
+The manuscript includes the public companion repository as the code and data link.
 
 Editable SVG sources are included in the teacher review package, but the arXiv source package uses PDF figures for safer LaTeX compilation.
 

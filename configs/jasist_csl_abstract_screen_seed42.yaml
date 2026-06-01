@@ -1,0 +1,55 @@
+experiments:
+  - experiment_id: jasist-csl-abstract-roberta-ls-screen-seed42
+    dataset: csl_instruction_discipline_abstract
+    baseline_name: roberta-wwm-ext
+    model_name: jasist-csl-abstract-roberta-wwm-ext-ls
+    model_id: hfl/chinese-roberta-wwm-ext
+    pooling: cls
+    head: linear
+    loss: label_smoothing
+    schedule: full_ft
+    augmentation: none
+    budget: screen
+    seeds: [42]
+    rationale: "Formal seed-42 RoBERTa baseline for CSL abstract-to-67-discipline classification."
+    expected_risk: low
+    tags: [jasist, csl, abstract, discipline, roberta, label_smoothing, screen, seed42]
+    hyperparameters:
+      label_smoothing: 0.05
+
+  - experiment_id: jasist-csl-abstract-autotail-bsaux-tfidf-fgm-screen-seed42
+    dataset: csl_instruction_discipline_abstract
+    baseline_name: roberta-wwm-ext
+    model_name: jasist-csl-abstract-roberta-wwm-ext-autotail-bsaux-tfidf-fgm
+    model_id: hfl/chinese-roberta-wwm-ext
+    pooling: cls
+    head: linear
+    loss: prior_adjusted_label_smoothing
+    schedule: full_ft
+    augmentation: none
+    budget: screen
+    seeds: [42]
+    rationale: "Formal seed-42 transfer test of the strongest title-task mechanism on CSL abstract-to-discipline classification: AutoTail, weak Balanced Softmax auxiliary loss, OOF TF-IDF teacher, and FGM."
+    expected_risk: medium
+    tags: [jasist, csl, abstract, discipline, roberta, auto_tail, balanced_softmax_aux, tfidf_teacher, fgm, screen, seed42]
+    hyperparameters:
+      label_smoothing: 0.05
+      prior_adjustment_tau: 0.15
+      class_prior_smoothing: 1.0
+      prior_adjustment_mode: auto_tail
+      prior_tail_quantile: 0.5
+      prior_min_imbalance_index: 0.1
+      balanced_softmax_aux_weight: 0.1
+      balanced_softmax_aux_tau: 0.25
+      balanced_softmax_aux_label_smoothing: 0.0
+      tfidf_teacher_weight: 0.03
+      tfidf_teacher_temperature: 1.5
+      tfidf_teacher_folds: 5
+      tfidf_teacher_ngram_range: [1, 3]
+      tfidf_teacher_min_df: 2
+      tfidf_teacher_max_features: 120000
+      tfidf_teacher_class_weight: balanced
+      tfidf_teacher_c: 2.0
+      tfidf_teacher_min_confidence: 0.0
+      fgm_epsilon: 0.3
+      fgm_weight: 0.5

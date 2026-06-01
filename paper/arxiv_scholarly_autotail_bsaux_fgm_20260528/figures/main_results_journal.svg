@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="760" viewBox="0 0 1250 760">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#2f443d" />
+    </marker>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="1250" height="760" fill="#ffffff"/>
+<text x="95" y="52" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" text-anchor="start" fill="#203a33">Three-seed mean improvements by task and encoder</text>
+<text x="95" y="82" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#58645f">Numbers are absolute percentage-point deltas over the same-encoder label-smoothing baseline.</text>
+<line x1="95" y1="581.71875" x2="1210" y2="581.71875" stroke="#d9ded7" stroke-width="1" opacity="1"/>
+<text x="80" y="587.71875" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="end" fill="#333">0</text>
+<line x1="95" y1="501.25" x2="1210" y2="501.25" stroke="#d9ded7" stroke-width="1" opacity="1"/>
+<text x="80" y="507.25" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="end" fill="#333">0.5</text>
+<line x1="95" y1="420.78125" x2="1210" y2="420.78125" stroke="#d9ded7" stroke-width="1" opacity="1"/>
+<text x="80" y="426.78125" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="end" fill="#333">1</text>
+<line x1="95" y1="340.3125" x2="1210" y2="340.3125" stroke="#d9ded7" stroke-width="1" opacity="1"/>
+<text x="80" y="346.3125" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="end" fill="#333">1.5</text>
+<line x1="95" y1="259.84375" x2="1210" y2="259.84375" stroke="#d9ded7" stroke-width="1" opacity="1"/>
+<text x="80" y="265.84375" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="end" fill="#333">2</text>
+<line x1="95" y1="179.375" x2="1210" y2="179.375" stroke="#d9ded7" stroke-width="1" opacity="1"/>
+<text x="80" y="185.375" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="end" fill="#333">2.5</text>
+<line x1="95" y1="581.71875" x2="1210" y2="581.71875" stroke="#333" stroke-width="1.8" opacity="1"/>
+<line x1="95" y1="115" x2="95" y2="630" stroke="#333" stroke-width="1.5" opacity="1"/>
+<line x1="95" y1="630" x2="1210" y2="630" stroke="#333" stroke-width="1.5" opacity="1"/>
+<text x="28" y="372.5" transform="rotate(-90 28 372.5)" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2926">Delta over LS baseline (points)</text>
+<rect x="166.8" y="353.7" width="48.0" height="228.0" fill="#2d6656" stroke="#333" stroke-width="1" opacity="0.96"/>
+<text x="190.83333333333337" y="346.7239583333303" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#222">+1.42</text>
+<rect x="226.8" y="503.5" width="48.0" height="78.2" fill="#7f817d" stroke="#333" stroke-width="1" opacity="0.96"/>
+<text x="250.83333333333337" y="496.48524305555503" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#222">+0.49</text>
+<rect x="286.8" y="344.1" width="48.0" height="237.6" fill="#96a889" stroke="#333" stroke-width="1" opacity="0.96"/>
+<text x="310.83333333333337" y="337.13253189717307" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#222">+1.48</text>
+<rect x="346.8" y="472.8" width="48.0" height="108.9" fill="#c8bb9c" stroke="#333" stroke-width="1" opacity="0.96"/>
+<text x="370.83333333333337" y="465.83960107853295" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#222">+0.68</text>
+<text x="280.83333333333337" y="665" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2926">Abstract</text>
+<text x="280.83333333333337" y="689" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2926">RoBERTa</text>
+<rect x="538.5" y="447.6" width="48.0" height="134.1" fill="#2d6656" stroke="#333" stroke-width="1" opacity="0.96"/>
+<text x="562.5" y="440.60416666666515" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#222">+0.83</text>
+<rect x="598.5" y="503.5" width="48.0" height="78.2" fill="#7f817d" stroke="#333" stroke-width="1" opacity="0.96"/>
+<text x="622.5" y="496.48524305555736" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#222">+0.49</text>
+<rect x="658.5" y="447.4" width="48.0" height="134.3" fill="#96a889" stroke="#333" stroke-width="1" opacity="0.96"/>
+<text x="682.5" y="440.37861462651614" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#222">+0.83</text>
+<rect x="718.5" y="495.8" width="48.0" height="86.0" fill="#c8bb9c" stroke="#333" stroke-width="1" opacity="0.96"/>
+<text x="742.5" y="488.7641242353659" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#222">+0.53</text>
+<text x="652.5" y="665" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2926">Abstract</text>
+<text x="652.5" y="689" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2926">MacBERT</text>
+<rect x="910.2" y="469.1" width="48.0" height="112.7" fill="#2d6656" stroke="#333" stroke-width="1" opacity="0.96"/>
+<text x="934.1666666666667" y="462.06249999999955" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#222">+0.70</text>
+<rect x="970.2" y="581.7" width="48.0" height="13.4" fill="#7f817d" stroke="#333" stroke-width="1" opacity="0.96"/>
+<text x="994.1666666666667" y="615.1302083333326" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#222">-0.08</text>
+<rect x="1030.2" y="157.5" width="48.0" height="424.2" fill="#96a889" stroke="#333" stroke-width="1" opacity="0.96"/>
+<text x="1054.1666666666667" y="150.49115944209288" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#222">+2.64</text>
+<rect x="1090.2" y="385.1" width="48.0" height="196.6" fill="#c8bb9c" stroke="#333" stroke-width="1" opacity="0.96"/>
+<text x="1114.1666666666667" y="378.11139168959033" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" text-anchor="middle" fill="#222">+1.22</text>
+<text x="1024.1666666666667" y="665" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2926">Title</text>
+<text x="1024.1666666666667" y="689" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2926">MacBERT</text>
+<rect x="185" y="702" width="24" height="16" fill="#2d6656" stroke="#333" stroke-width="1"/>
+<text x="219" y="715" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#222">Val Acc</text>
+<rect x="395" y="702" width="24" height="16" fill="#7f817d" stroke="#333" stroke-width="1"/>
+<text x="429" y="715" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#222">Lock Acc</text>
+<rect x="605" y="702" width="24" height="16" fill="#96a889" stroke="#333" stroke-width="1"/>
+<text x="639" y="715" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#222">Val Bal. Acc</text>
+<rect x="815" y="702" width="24" height="16" fill="#c8bb9c" stroke="#333" stroke-width="1"/>
+<text x="849" y="715" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#222">Lock Bal. Acc</text>
+</svg>

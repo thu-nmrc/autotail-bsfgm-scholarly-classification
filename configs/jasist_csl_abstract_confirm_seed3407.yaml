@@ -1,0 +1,46 @@
+experiments:
+  - experiment_id: jasist-csl-abstract-roberta-ls-screen-seed3407
+    dataset: csl_instruction_discipline_abstract
+    baseline_name: roberta-wwm-ext
+    model_name: jasist-csl-abstract-roberta-wwm-ext-ls
+    model_id: hfl/chinese-roberta-wwm-ext
+    pooling: cls
+    head: linear
+    loss: label_smoothing
+    schedule: full_ft
+    augmentation: none
+    budget: screen
+    seeds: [3407]
+    rationale: "Formal seed-3407 RoBERTa baseline for CSL abstract-to-67-discipline classification."
+    expected_risk: low
+    tags: [jasist, csl, abstract, discipline, roberta, label_smoothing, screen, seed3407]
+    hyperparameters:
+      label_smoothing: 0.05
+
+  - experiment_id: jasist-csl-abstract-autotail-bsaux-fgm-screen-seed3407
+    dataset: csl_instruction_discipline_abstract
+    baseline_name: roberta-wwm-ext
+    model_name: jasist-csl-abstract-roberta-wwm-ext-autotail-bsaux-fgm
+    model_id: hfl/chinese-roberta-wwm-ext
+    pooling: cls
+    head: linear
+    loss: prior_adjusted_label_smoothing
+    schedule: full_ft
+    augmentation: none
+    budget: screen
+    seeds: [3407]
+    rationale: "Seed-3407 confirm for the simplified paper-facing method: AutoTail plus weak Balanced Softmax auxiliary loss and FGM."
+    expected_risk: medium
+    tags: [jasist, csl, abstract, discipline, roberta, auto_tail, balanced_softmax_aux, fgm, screen, seed3407]
+    hyperparameters:
+      label_smoothing: 0.05
+      prior_adjustment_tau: 0.15
+      class_prior_smoothing: 1.0
+      prior_adjustment_mode: auto_tail
+      prior_tail_quantile: 0.5
+      prior_min_imbalance_index: 0.1
+      balanced_softmax_aux_weight: 0.1
+      balanced_softmax_aux_tau: 0.25
+      balanced_softmax_aux_label_smoothing: 0.0
+      fgm_epsilon: 0.3
+      fgm_weight: 0.5

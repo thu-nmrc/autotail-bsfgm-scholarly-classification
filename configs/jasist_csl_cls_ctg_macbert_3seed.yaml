@@ -1,0 +1,46 @@
+experiments:
+  - experiment_id: jasist-csl-cls-ctg-macbert-ls-screen
+    dataset: csl_cls_ctg
+    baseline_name: macbert-base
+    model_name: jasist-csl-cls-ctg-macbert-base-ls
+    model_id: hfl/chinese-macbert-base
+    pooling: cls
+    head: linear
+    loss: label_smoothing
+    schedule: full_ft
+    augmentation: none
+    budget: screen
+    seeds: [13, 42, 3407]
+    rationale: "Cross-task stronger-encoder baseline on official CSL title-to-category classification."
+    expected_risk: medium
+    tags: [jasist, csl, cls_ctg, title, macbert, label_smoothing, screen, cross_task]
+    hyperparameters:
+      label_smoothing: 0.05
+
+  - experiment_id: jasist-csl-cls-ctg-macbert-autotail-bsaux-fgm-screen
+    dataset: csl_cls_ctg
+    baseline_name: macbert-base
+    model_name: jasist-csl-cls-ctg-macbert-base-autotail-bsaux-fgm
+    model_id: hfl/chinese-macbert-base
+    pooling: cls
+    head: linear
+    loss: prior_adjusted_label_smoothing
+    schedule: full_ft
+    augmentation: none
+    budget: screen
+    seeds: [13, 42, 3407]
+    rationale: "Cross-task test of the paper-facing method on official CSL title-to-category classification."
+    expected_risk: medium
+    tags: [jasist, csl, cls_ctg, title, macbert, auto_tail, balanced_softmax_aux, fgm, screen, cross_task]
+    hyperparameters:
+      label_smoothing: 0.05
+      prior_adjustment_tau: 0.15
+      class_prior_smoothing: 1.0
+      prior_adjustment_mode: auto_tail
+      prior_tail_quantile: 0.5
+      prior_min_imbalance_index: 0.1
+      balanced_softmax_aux_weight: 0.1
+      balanced_softmax_aux_tau: 0.25
+      balanced_softmax_aux_label_smoothing: 0.0
+      fgm_epsilon: 0.3
+      fgm_weight: 0.5

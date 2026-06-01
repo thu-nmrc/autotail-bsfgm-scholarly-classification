@@ -1,0 +1,139 @@
+{
+  "dataset": "csl_cls_ctg",
+  "created_at": "2026-05-26",
+  "purpose": "Authority-backed discipline knowledge for CSL title-to-category classification experiments.",
+  "sources": {
+    "gbt_13745_2009": {
+      "name": "GB/T 13745-2009 学科分类与代码",
+      "url": "https://openstd.samr.gov.cn/bzgk/std/newGbInfo?hcno=4C13F521FD6ECB6E5EC026FCD779986E&refer=outter",
+      "authority": "国家市场监督管理总局 / 国家标准化管理委员会",
+      "use": "Chinese national discipline classification and code system."
+    },
+    "moe_degree_catalog_2022": {
+      "name": "研究生教育学科专业目录（2022年）",
+      "url": "https://www.moe.gov.cn/srcsite/a22/moe_833/202209/w020220914572994461110.pdf",
+      "authority": "国务院学位委员会 / 教育部",
+      "use": "Official Chinese graduate discipline and professional degree catalog."
+    },
+    "openalex_fields": {
+      "name": "OpenAlex Fields API",
+      "url": "https://developers.openalex.org/api-reference/fields",
+      "authority": "OpenAlex",
+      "use": "Open scholarly graph field hierarchy: Domain -> Field -> Subfield -> Topic."
+    },
+    "oecd_frascati_2015": {
+      "name": "OECD Frascati Manual 2015",
+      "url": "https://www.oecd.org/en/publications/frascati-manual-2015_9789264239012-en.html",
+      "authority": "OECD",
+      "use": "International R&D field taxonomy reference."
+    }
+  },
+  "label_order": [
+    "军事学",
+    "农学",
+    "医学",
+    "历史学",
+    "哲学",
+    "工学",
+    "教育学",
+    "文学",
+    "法学",
+    "理学",
+    "管理学",
+    "经济学",
+    "艺术学"
+  ],
+  "labels": [
+    {
+      "label": "军事学",
+      "description": "军事学研究国防安全、军事思想、战略战役战术、军队指挥、军事训练、军事后勤、军事装备与军队建设等问题。",
+      "authority_terms": ["军事思想", "军事历史", "战略学", "战役学", "战术学", "军队指挥", "军事训练", "军事装备", "国防安全", "军队建设"],
+      "openalex_alignment": ["Social Sciences", "Engineering", "Computer Science"],
+      "concepts": ["军事", "国防", "军队", "武器", "装备", "作战", "指挥", "战略", "战术", "训练", "后勤", "安全"]
+    },
+    {
+      "label": "农学",
+      "description": "农学研究作物、园艺、农业资源与环境、植物保护、畜牧、兽医、林业、水产、草学和农业生产系统。",
+      "authority_terms": ["作物学", "园艺学", "农业资源与环境", "植物保护", "畜牧学", "兽医学", "林学", "水产", "草学", "农业"],
+      "openalex_alignment": ["Agricultural and Biological Sciences", "Veterinary", "Environmental Science"],
+      "concepts": ["农业", "农学", "作物", "园艺", "植物", "土壤", "资源", "畜牧", "兽医", "林业", "水产", "草地", "种植"]
+    },
+    {
+      "label": "医学",
+      "description": "医学研究基础医学、临床医学、口腔医学、公共卫生与预防医学、中医学、中西医结合、药学、护理、医学技术和法医学。",
+      "authority_terms": ["基础医学", "临床医学", "口腔医学", "公共卫生", "预防医学", "中医学", "药学", "护理学", "医学技术", "法医学"],
+      "openalex_alignment": ["Medicine", "Nursing", "Pharmacology, Toxicology and Pharmaceutics", "Dentistry", "Health Professions"],
+      "concepts": ["医学", "临床", "疾病", "治疗", "诊断", "药物", "药学", "护理", "卫生", "预防", "中医", "口腔", "患者"]
+    },
+    {
+      "label": "历史学",
+      "description": "历史学研究考古、中国史、世界史、历史文献、文化史、区域史、史学理论和博物馆相关问题。",
+      "authority_terms": ["考古学", "中国史", "世界史", "历史文献", "文化史", "史学理论", "博物馆", "文物"],
+      "openalex_alignment": ["Arts and Humanities", "Social Sciences"],
+      "concepts": ["历史", "考古", "文献", "中国史", "世界史", "文化", "史学", "古代", "近代", "文物", "博物馆"]
+    },
+    {
+      "label": "哲学",
+      "description": "哲学研究哲学理论、马克思主义哲学、中国哲学、外国哲学、逻辑学、伦理学、美学、宗教学和科学技术哲学。",
+      "authority_terms": ["哲学", "马克思主义哲学", "中国哲学", "外国哲学", "逻辑学", "伦理学", "美学", "宗教学", "科学技术哲学", "应用伦理"],
+      "openalex_alignment": ["Arts and Humanities", "Social Sciences"],
+      "concepts": ["哲学", "伦理", "逻辑", "美学", "宗教", "思想", "价值", "认识论", "形而上学", "马克思主义"]
+    },
+    {
+      "label": "工学",
+      "description": "工学研究工程技术系统，包括机械、材料、电子、通信、控制、计算机、软件、土木、水利、化工、能源、交通、环境、安全和智能技术。",
+      "authority_terms": ["机械工程", "材料科学与工程", "电气工程", "电子科学与技术", "信息与通信工程", "控制科学与工程", "计算机科学与技术", "软件工程", "土木工程", "水利工程", "化学工程与技术", "交通运输工程", "环境科学与工程", "安全科学与工程", "网络空间安全", "智能科学与技术"],
+      "openalex_alignment": ["Engineering", "Computer Science", "Materials Science", "Energy", "Chemical Engineering"],
+      "concepts": ["工学", "工程", "技术", "计算机", "软件", "算法", "机械", "电子", "通信", "控制", "材料", "土木", "水利", "交通", "环境", "能源", "智能"]
+    },
+    {
+      "label": "教育学",
+      "description": "教育学研究教育理论、课程教学、教育管理、学习评价、教师发展、心理学、体育学和教育实践。",
+      "authority_terms": ["教育学", "心理学", "体育学", "教育", "课程", "教学", "教师", "学习", "评价", "应用心理"],
+      "openalex_alignment": ["Social Sciences", "Psychology"],
+      "concepts": ["教育", "教学", "课程", "学习", "学生", "教师", "学校", "评价", "心理", "体育", "培养", "课堂"]
+    },
+    {
+      "label": "文学",
+      "description": "文学研究中国语言文学、外国语言文学、新闻传播、翻译、出版、语言文字、文学理论和文本写作传播。",
+      "authority_terms": ["中国语言文学", "外国语言文学", "新闻传播学", "翻译", "新闻与传播", "出版", "语言文字", "文学理论"],
+      "openalex_alignment": ["Arts and Humanities", "Social Sciences"],
+      "concepts": ["文学", "语言", "文字", "文本", "写作", "小说", "诗歌", "翻译", "新闻", "传播", "出版", "叙事"]
+    },
+    {
+      "label": "法学",
+      "description": "法学研究法律制度、政治学、社会学、民族学、马克思主义理论、党史党建、纪检监察、知识产权和社会治理。",
+      "authority_terms": ["法学", "政治学", "社会学", "民族学", "马克思主义理论", "中共党史党建学", "纪检监察学", "法律", "知识产权", "社会工作"],
+      "openalex_alignment": ["Social Sciences"],
+      "concepts": ["法律", "法学", "司法", "权利", "制度", "政治", "社会", "治理", "民族", "马克思主义", "党建", "知识产权"]
+    },
+    {
+      "label": "理学",
+      "description": "理学研究数学、物理、化学、天文、地理、大气、海洋、地球物理、地质、生物、系统科学、生态、统计和基础自然科学。",
+      "authority_terms": ["数学", "物理学", "化学", "天文学", "地理学", "大气科学", "海洋科学", "地球物理学", "地质学", "生物学", "系统科学", "科学技术史", "生态学", "统计学"],
+      "openalex_alignment": ["Mathematics", "Physics and Astronomy", "Chemistry", "Earth and Planetary Sciences", "Biochemistry, Genetics and Molecular Biology"],
+      "concepts": ["理学", "数学", "物理", "化学", "生物", "地理", "天文", "地质", "海洋", "大气", "生态", "统计", "理论"]
+    },
+    {
+      "label": "管理学",
+      "description": "管理学研究管理科学与工程、工商管理、农林经济管理、公共管理、信息资源管理、会计、审计、图书情报和工程管理。",
+      "authority_terms": ["管理科学与工程", "工商管理学", "农林经济管理", "公共管理学", "信息资源管理", "会计", "审计", "图书情报", "工程管理"],
+      "openalex_alignment": ["Business, Management and Accounting", "Decision Sciences", "Social Sciences"],
+      "concepts": ["管理", "组织", "企业", "工商", "公共管理", "信息管理", "资源管理", "会计", "审计", "决策", "绩效", "图书情报"]
+    },
+    {
+      "label": "经济学",
+      "description": "经济学研究理论经济学、应用经济学、金融、统计、财政税收、国际商务、保险、资产评估、数字经济和产业贸易问题。",
+      "authority_terms": ["理论经济学", "应用经济学", "数字经济", "金融", "应用统计", "税务", "国际商务", "保险", "资产评估", "审计"],
+      "openalex_alignment": ["Economics, Econometrics and Finance", "Business, Management and Accounting"],
+      "concepts": ["经济", "金融", "贸易", "产业", "财政", "税收", "统计", "市场", "宏观", "微观", "投资", "数字经济"]
+    },
+    {
+      "label": "艺术学",
+      "description": "艺术学研究艺术理论、音乐、舞蹈、戏剧影视、美术、书法、设计、戏曲曲艺和艺术教育。",
+      "authority_terms": ["艺术学", "音乐", "舞蹈", "戏剧与影视", "美术与书法", "设计", "戏曲与曲艺", "艺术教育"],
+      "openalex_alignment": ["Arts and Humanities"],
+      "concepts": ["艺术", "音乐", "舞蹈", "美术", "书法", "设计", "戏剧", "影视", "戏曲", "曲艺", "审美", "艺术教育"]
+    }
+  ]
+}

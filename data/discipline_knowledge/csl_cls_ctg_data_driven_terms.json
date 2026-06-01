@@ -1,0 +1,2753 @@
+{
+  "created_at": "2026-05-26",
+  "dataset": "csl_cls_ctg",
+  "method": "one-vs-rest smoothed log-odds over Chinese character 2-4 grams, merged with authority discipline terms",
+  "source_files": [
+    "data/csl_cls_ctg/train.jsonl",
+    "data/discipline_knowledge/csl_cls_ctg_authority_knowledge.json"
+  ],
+  "label_order": [
+    "军事学",
+    "农学",
+    "医学",
+    "历史学",
+    "哲学",
+    "工学",
+    "教育学",
+    "文学",
+    "法学",
+    "理学",
+    "管理学",
+    "经济学",
+    "艺术学"
+  ],
+  "labels": {
+    "军事学": {
+      "label_id": 0,
+      "train_count": 67,
+      "authority_terms": [
+        "作战",
+        "军事",
+        "军事历史",
+        "军事思想",
+        "军事装备",
+        "军事训练",
+        "军队",
+        "军队建设",
+        "军队指挥",
+        "后勤",
+        "国防",
+        "国防安全",
+        "安全",
+        "战役学",
+        "战术",
+        "战术学",
+        "战略",
+        "战略学",
+        "指挥",
+        "武器",
+        "装备",
+        "训练"
+      ],
+      "data_terms": [
+        {
+          "term": "防空",
+          "score": 51.5053,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "阵地",
+          "score": 50.2435,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "统效能",
+          "score": 50.2435,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "系统效",
+          "score": 50.2435,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "空作战",
+          "score": 50.2435,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "目标威胁",
+          "score": 50.2435,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "的C4I",
+          "score": 50.2435,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "火力",
+          "score": 50.2435,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "支援",
+          "score": 50.2435,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "器系统可",
+          "score": 50.2435,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "侦察",
+          "score": 50.2435,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "SR系统",
+          "score": 50.2435,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "ISR系",
+          "score": 50.2435,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "空导弹",
+          "score": 41.3684,
+          "label_df": 3,
+          "global_df": 4
+        },
+        {
+          "term": "速解",
+          "score": 40.0611,
+          "label_df": 2,
+          "global_df": 3
+        },
+        {
+          "term": "载雷达",
+          "score": 40.0611,
+          "label_df": 2,
+          "global_df": 3
+        },
+        {
+          "term": "调制",
+          "score": 40.0611,
+          "label_df": 2,
+          "global_df": 3
+        },
+        {
+          "term": "色关联",
+          "score": 40.0611,
+          "label_df": 2,
+          "global_df": 3
+        },
+        {
+          "term": "统可靠性",
+          "score": 40.0611,
+          "label_df": 2,
+          "global_df": 3
+        },
+        {
+          "term": "系统可靠",
+          "score": 40.0611,
+          "label_df": 2,
+          "global_df": 3
+        },
+        {
+          "term": "灰色关",
+          "score": 40.0611,
+          "label_df": 2,
+          "global_df": 3
+        },
+        {
+          "term": "军队",
+          "score": 40.0611,
+          "label_df": 2,
+          "global_df": 3
+        },
+        {
+          "term": "武器",
+          "score": 34.6178,
+          "label_df": 4,
+          "global_df": 7
+        },
+        {
+          "term": "效能评估",
+          "score": 33.5165,
+          "label_df": 3,
+          "global_df": 6
+        }
+      ],
+      "merged_terms": [
+        "防空",
+        "阵地",
+        "统效能",
+        "系统效",
+        "空作战",
+        "目标威胁",
+        "的C4I",
+        "火力",
+        "支援",
+        "器系统可",
+        "侦察",
+        "SR系统",
+        "ISR系",
+        "空导弹",
+        "速解",
+        "载雷达",
+        "军事",
+        "国防",
+        "军队",
+        "武器",
+        "装备",
+        "作战",
+        "指挥",
+        "战略",
+        "战术",
+        "训练",
+        "后勤",
+        "安全",
+        "军事思想",
+        "军事历史",
+        "战略学",
+        "战役学",
+        "战术学",
+        "军队指挥",
+        "军事训练",
+        "军事装备",
+        "国防安全",
+        "军队建设"
+      ]
+    },
+    "农学": {
+      "label_id": 1,
+      "train_count": 807,
+      "authority_terms": [
+        "作物",
+        "作物学",
+        "兽医",
+        "兽医学",
+        "农业",
+        "农业资源与环境",
+        "农学",
+        "园艺",
+        "园艺学",
+        "土壤",
+        "林业",
+        "林学",
+        "植物",
+        "植物保护",
+        "水产",
+        "畜牧",
+        "畜牧学",
+        "种植",
+        "草地",
+        "草学",
+        "资源"
+      ],
+      "data_terms": [
+        {
+          "term": "栽培技",
+          "score": 35.0871,
+          "label_df": 22,
+          "global_df": 22
+        },
+        {
+          "term": "林绿化",
+          "score": 35.0871,
+          "label_df": 22,
+          "global_df": 22
+        },
+        {
+          "term": "培技术",
+          "score": 35.0871,
+          "label_df": 22,
+          "global_df": 22
+        },
+        {
+          "term": "园林绿",
+          "score": 35.0871,
+          "label_df": 22,
+          "global_df": 22
+        },
+        {
+          "term": "育苗",
+          "score": 34.94,
+          "label_df": 15,
+          "global_df": 15
+        },
+        {
+          "term": "市园林",
+          "score": 34.94,
+          "label_df": 15,
+          "global_df": 15
+        },
+        {
+          "term": "林景观",
+          "score": 34.8831,
+          "label_df": 14,
+          "global_df": 14
+        },
+        {
+          "term": "城市园",
+          "score": 34.8831,
+          "label_df": 14,
+          "global_df": 14
+        },
+        {
+          "term": "殖技术",
+          "score": 34.8118,
+          "label_df": 13,
+          "global_df": 13
+        },
+        {
+          "term": "园林景",
+          "score": 34.8118,
+          "label_df": 13,
+          "global_df": 13
+        },
+        {
+          "term": "殖试验",
+          "score": 34.7231,
+          "label_df": 12,
+          "global_df": 12
+        },
+        {
+          "term": "池塘",
+          "score": 34.6127,
+          "label_df": 11,
+          "global_df": 11
+        },
+        {
+          "term": "产栽培",
+          "score": 34.4756,
+          "label_df": 10,
+          "global_df": 10
+        },
+        {
+          "term": "高产栽",
+          "score": 34.3043,
+          "label_df": 9,
+          "global_df": 9
+        },
+        {
+          "term": "饲料",
+          "score": 34.3043,
+          "label_df": 9,
+          "global_df": 9
+        },
+        {
+          "term": "造林",
+          "score": 34.3043,
+          "label_df": 9,
+          "global_df": 9
+        },
+        {
+          "term": "术要",
+          "score": 34.3043,
+          "label_df": 9,
+          "global_df": 9
+        },
+        {
+          "term": "新品种",
+          "score": 34.3043,
+          "label_df": 9,
+          "global_df": 9
+        },
+        {
+          "term": "扦插",
+          "score": 34.3043,
+          "label_df": 9,
+          "global_df": 9
+        },
+        {
+          "term": "养殖技",
+          "score": 34.3043,
+          "label_df": 9,
+          "global_df": 9
+        },
+        {
+          "term": "种子发芽",
+          "score": 34.089,
+          "label_df": 8,
+          "global_df": 8
+        },
+        {
+          "term": "性状的",
+          "score": 34.089,
+          "label_df": 8,
+          "global_df": 8
+        },
+        {
+          "term": "造景",
+          "score": 33.8148,
+          "label_df": 7,
+          "global_df": 7
+        },
+        {
+          "term": "观中",
+          "score": 33.8148,
+          "label_df": 7,
+          "global_df": 7
+        }
+      ],
+      "merged_terms": [
+        "栽培技",
+        "林绿化",
+        "培技术",
+        "园林绿",
+        "育苗",
+        "市园林",
+        "林景观",
+        "城市园",
+        "殖技术",
+        "园林景",
+        "殖试验",
+        "池塘",
+        "产栽培",
+        "高产栽",
+        "饲料",
+        "造林",
+        "农业",
+        "农学",
+        "作物",
+        "园艺",
+        "植物",
+        "土壤",
+        "资源",
+        "畜牧",
+        "兽医",
+        "林业",
+        "水产",
+        "草地",
+        "种植",
+        "作物学",
+        "园艺学",
+        "农业资源与环境",
+        "植物保护",
+        "畜牧学",
+        "兽医学",
+        "林学",
+        "草学"
+      ]
+    },
+    "医学": {
+      "label_id": 2,
+      "train_count": 728,
+      "authority_terms": [
+        "中医",
+        "中医学",
+        "临床",
+        "临床医学",
+        "公共卫生",
+        "医学",
+        "医学技术",
+        "卫生",
+        "口腔",
+        "口腔医学",
+        "基础医学",
+        "患者",
+        "护理",
+        "护理学",
+        "治疗",
+        "法医学",
+        "疾病",
+        "药学",
+        "药物",
+        "诊断",
+        "预防",
+        "预防医学"
+      ],
+      "data_terms": [
+        {
+          "term": "疗急",
+          "score": 35.754,
+          "label_df": 20,
+          "global_df": 20
+        },
+        {
+          "term": "口腔",
+          "score": 35.7469,
+          "label_df": 19,
+          "global_df": 19
+        },
+        {
+          "term": "临床研究",
+          "score": 35.7338,
+          "label_df": 18,
+          "global_df": 18
+        },
+        {
+          "term": "疗效观察",
+          "score": 35.7244,
+          "label_df": 25,
+          "global_df": 25
+        },
+        {
+          "term": "术后",
+          "score": 35.7137,
+          "label_df": 17,
+          "global_df": 17
+        },
+        {
+          "term": "合治疗",
+          "score": 35.7137,
+          "label_df": 17,
+          "global_df": 17
+        },
+        {
+          "term": "0例",
+          "score": 35.7137,
+          "label_df": 17,
+          "global_df": 17
+        },
+        {
+          "term": "注射液",
+          "score": 35.6914,
+          "label_df": 27,
+          "global_df": 27
+        },
+        {
+          "term": "缺血",
+          "score": 35.6855,
+          "label_df": 16,
+          "global_df": 16
+        },
+        {
+          "term": "液治疗",
+          "score": 35.6855,
+          "label_df": 16,
+          "global_df": 16
+        },
+        {
+          "term": "例临床",
+          "score": 35.6855,
+          "label_df": 16,
+          "global_df": 16
+        },
+        {
+          "term": "性心",
+          "score": 35.6475,
+          "label_df": 15,
+          "global_df": 15
+        },
+        {
+          "term": "的临床研",
+          "score": 35.598,
+          "label_df": 14,
+          "global_df": 14
+        },
+        {
+          "term": "梗死",
+          "score": 35.598,
+          "label_df": 14,
+          "global_df": 14
+        },
+        {
+          "term": "药治疗",
+          "score": 35.5345,
+          "label_df": 13,
+          "global_df": 13
+        },
+        {
+          "term": "结合治",
+          "score": 35.5345,
+          "label_df": 13,
+          "global_df": 13
+        },
+        {
+          "term": "汤治疗",
+          "score": 35.4542,
+          "label_df": 12,
+          "global_df": 12
+        },
+        {
+          "term": "射液治",
+          "score": 35.4542,
+          "label_df": 12,
+          "global_df": 12
+        },
+        {
+          "term": "床观察",
+          "score": 35.3714,
+          "label_df": 39,
+          "global_df": 39
+        },
+        {
+          "term": "临床观",
+          "score": 35.3714,
+          "label_df": 39,
+          "global_df": 39
+        },
+        {
+          "term": "2例",
+          "score": 35.3529,
+          "label_df": 11,
+          "global_df": 11
+        },
+        {
+          "term": "静脉",
+          "score": 35.2257,
+          "label_df": 10,
+          "global_df": 10
+        },
+        {
+          "term": "衰竭",
+          "score": 35.2257,
+          "label_df": 10,
+          "global_df": 10
+        },
+        {
+          "term": "脑梗",
+          "score": 35.2257,
+          "label_df": 10,
+          "global_df": 10
+        }
+      ],
+      "merged_terms": [
+        "疗急",
+        "口腔",
+        "临床研究",
+        "疗效观察",
+        "术后",
+        "合治疗",
+        "0例",
+        "注射液",
+        "缺血",
+        "液治疗",
+        "例临床",
+        "性心",
+        "的临床研",
+        "梗死",
+        "药治疗",
+        "结合治",
+        "医学",
+        "临床",
+        "疾病",
+        "治疗",
+        "诊断",
+        "药物",
+        "药学",
+        "护理",
+        "卫生",
+        "预防",
+        "中医",
+        "患者",
+        "基础医学",
+        "临床医学",
+        "口腔医学",
+        "公共卫生",
+        "预防医学",
+        "中医学",
+        "护理学",
+        "医学技术",
+        "法医学"
+      ]
+    },
+    "历史学": {
+      "label_id": 3,
+      "train_count": 124,
+      "authority_terms": [
+        "世界史",
+        "中国史",
+        "博物馆",
+        "历史",
+        "历史文献",
+        "古代",
+        "史学",
+        "史学理论",
+        "文化",
+        "文化史",
+        "文物",
+        "文献",
+        "考古",
+        "考古学",
+        "近代"
+      ],
+      "data_terms": [
+        {
+          "term": "民国时期",
+          "score": 46.2872,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "魏晋南北",
+          "score": 45.3838,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "进会",
+          "score": 45.3838,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "的法国",
+          "score": 45.3838,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "的沿革",
+          "score": 45.3838,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "江浙",
+          "score": 45.3838,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "晚清",
+          "score": 45.3838,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "晋南北朝",
+          "score": 45.3838,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "时期的",
+          "score": 45.3838,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "意大利",
+          "score": 45.3838,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "帝的",
+          "score": 45.3838,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "国史学",
+          "score": 45.3838,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "唱片",
+          "score": 45.3838,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "南\"",
+          "score": 45.3838,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "十年代",
+          "score": 45.3838,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "代史",
+          "score": 45.3838,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "中国史",
+          "score": 45.3838,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "下的法",
+          "score": 45.3838,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "明代",
+          "score": 37.7224,
+          "label_df": 4,
+          "global_df": 5
+        },
+        {
+          "term": "代江",
+          "score": 36.8232,
+          "label_df": 3,
+          "global_df": 4
+        },
+        {
+          "term": "述论",
+          "score": 35.3786,
+          "label_df": 2,
+          "global_df": 3
+        },
+        {
+          "term": "讨会\"",
+          "score": 35.3786,
+          "label_df": 2,
+          "global_df": 3
+        },
+        {
+          "term": "美国对",
+          "score": 35.3786,
+          "label_df": 2,
+          "global_df": 3
+        },
+        {
+          "term": "清时",
+          "score": 35.3786,
+          "label_df": 2,
+          "global_df": 3
+        }
+      ],
+      "merged_terms": [
+        "民国时期",
+        "魏晋南北",
+        "进会",
+        "的法国",
+        "的沿革",
+        "江浙",
+        "晚清",
+        "晋南北朝",
+        "时期的",
+        "意大利",
+        "帝的",
+        "国史学",
+        "唱片",
+        "南\"",
+        "十年代",
+        "代史",
+        "历史",
+        "考古",
+        "文献",
+        "中国史",
+        "世界史",
+        "文化",
+        "史学",
+        "古代",
+        "近代",
+        "文物",
+        "博物馆",
+        "考古学",
+        "历史文献",
+        "文化史",
+        "史学理论"
+      ]
+    },
+    "哲学": {
+      "label_id": 4,
+      "train_count": 164,
+      "authority_terms": [
+        "中国哲学",
+        "价值",
+        "伦理",
+        "伦理学",
+        "哲学",
+        "外国哲学",
+        "宗教",
+        "宗教学",
+        "应用伦理",
+        "形而上学",
+        "思想",
+        "科学技术哲学",
+        "美学",
+        "认识论",
+        "逻辑",
+        "逻辑学",
+        "马克思主义",
+        "马克思主义哲学"
+      ],
+      "data_terms": [
+        {
+          "term": "伦理学",
+          "score": 45.498,
+          "label_df": 9,
+          "global_df": 9
+        },
+        {
+          "term": "康德",
+          "score": 45.2502,
+          "label_df": 6,
+          "global_df": 6
+        },
+        {
+          "term": "的伦理",
+          "score": 45.0378,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "理学的",
+          "score": 45.0378,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "哲学的",
+          "score": 45.0378,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "德哲学",
+          "score": 44.6974,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "义哲学",
+          "score": 44.6974,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "主义哲",
+          "score": 44.6974,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "马克思与",
+          "score": 44.1381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "际道",
+          "score": 44.1381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "道教协会",
+          "score": 44.1381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "道德生活",
+          "score": 44.1381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "道德哲",
+          "score": 44.1381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "罗尔斯",
+          "score": 44.1381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "的和谐",
+          "score": 44.1381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "现代价值",
+          "score": 44.1381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "武当",
+          "score": 44.1381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "格尔",
+          "score": 44.1381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "德性",
+          "score": 44.1381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "国道",
+          "score": 44.1381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "哲学研",
+          "score": 44.1381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "代视",
+          "score": 44.1381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "隐\"",
+          "score": 43.1534,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "金律",
+          "score": 43.1534,
+          "label_df": 2,
+          "global_df": 2
+        }
+      ],
+      "merged_terms": [
+        "伦理学",
+        "康德",
+        "的伦理",
+        "理学的",
+        "哲学的",
+        "德哲学",
+        "义哲学",
+        "主义哲",
+        "马克思与",
+        "际道",
+        "道教协会",
+        "道德生活",
+        "道德哲",
+        "罗尔斯",
+        "的和谐",
+        "现代价值",
+        "哲学",
+        "伦理",
+        "逻辑",
+        "美学",
+        "宗教",
+        "思想",
+        "价值",
+        "认识论",
+        "形而上学",
+        "马克思主义",
+        "马克思主义哲学",
+        "中国哲学",
+        "外国哲学",
+        "逻辑学",
+        "宗教学",
+        "科学技术哲学",
+        "应用伦理"
+      ]
+    },
+    "工学": {
+      "label_id": 5,
+      "train_count": 3536,
+      "authority_terms": [
+        "交通",
+        "交通运输工程",
+        "信息与通信工程",
+        "化学工程与技术",
+        "土木",
+        "土木工程",
+        "安全科学与工程",
+        "工学",
+        "工程",
+        "技术",
+        "控制",
+        "控制科学与工程",
+        "智能",
+        "智能科学与技术",
+        "机械",
+        "机械工程",
+        "材料",
+        "材料科学与工程",
+        "水利",
+        "水利工程",
+        "环境",
+        "环境科学与工程",
+        "电子",
+        "电子科学与技术",
+        "电气工程",
+        "算法",
+        "网络空间安全",
+        "能源",
+        "计算机",
+        "计算机科学与技术",
+        "软件",
+        "软件工程",
+        "通信"
+      ],
+      "data_terms": [
+        {
+          "term": "隧道",
+          "score": 24.5336,
+          "label_df": 49,
+          "global_df": 49
+        },
+        {
+          "term": "电池",
+          "score": 24.4742,
+          "label_df": 43,
+          "global_df": 43
+        },
+        {
+          "term": "织物",
+          "score": 24.2523,
+          "label_df": 33,
+          "global_df": 33
+        },
+        {
+          "term": "感器",
+          "score": 24.1801,
+          "label_df": 31,
+          "global_df": 31
+        },
+        {
+          "term": "料的研究",
+          "score": 23.8061,
+          "label_df": 24,
+          "global_df": 24
+        },
+        {
+          "term": "电路",
+          "score": 23.7318,
+          "label_df": 23,
+          "global_df": 23
+        },
+        {
+          "term": "故障",
+          "score": 23.7318,
+          "label_df": 23,
+          "global_df": 23
+        },
+        {
+          "term": "材料的研",
+          "score": 23.6504,
+          "label_df": 22,
+          "global_df": 22
+        },
+        {
+          "term": "无线",
+          "score": 23.6504,
+          "label_df": 22,
+          "global_df": 22
+        },
+        {
+          "term": "聚合物",
+          "score": 23.5613,
+          "label_df": 21,
+          "global_df": 21
+        },
+        {
+          "term": "备及其",
+          "score": 23.5613,
+          "label_df": 21,
+          "global_df": 21
+        },
+        {
+          "term": "真研究",
+          "score": 23.4635,
+          "label_df": 20,
+          "global_df": 20
+        },
+        {
+          "term": "的设计与",
+          "score": 23.4635,
+          "label_df": 20,
+          "global_df": 20
+        },
+        {
+          "term": "仿真研",
+          "score": 23.4635,
+          "label_df": 20,
+          "global_df": 20
+        },
+        {
+          "term": "性能分析",
+          "score": 23.3558,
+          "label_df": 19,
+          "global_df": 19
+        },
+        {
+          "term": "发光",
+          "score": 23.3558,
+          "label_df": 19,
+          "global_df": 19
+        },
+        {
+          "term": "大桥",
+          "score": 23.2369,
+          "label_df": 18,
+          "global_df": 18
+        },
+        {
+          "term": "在线",
+          "score": 23.2369,
+          "label_df": 18,
+          "global_df": 18
+        },
+        {
+          "term": "计方",
+          "score": 23.1054,
+          "label_df": 17,
+          "global_df": 17
+        },
+        {
+          "term": "电极",
+          "score": 23.1054,
+          "label_df": 17,
+          "global_df": 17
+        },
+        {
+          "term": "染料",
+          "score": 23.1054,
+          "label_df": 17,
+          "global_df": 17
+        },
+        {
+          "term": "掺杂",
+          "score": 23.1054,
+          "label_df": 17,
+          "global_df": 17
+        },
+        {
+          "term": "尾矿",
+          "score": 23.1054,
+          "label_df": 17,
+          "global_df": 17
+        },
+        {
+          "term": "齿轮",
+          "score": 22.9592,
+          "label_df": 16,
+          "global_df": 16
+        }
+      ],
+      "merged_terms": [
+        "隧道",
+        "电池",
+        "织物",
+        "感器",
+        "料的研究",
+        "电路",
+        "故障",
+        "材料的研",
+        "无线",
+        "聚合物",
+        "备及其",
+        "真研究",
+        "的设计与",
+        "仿真研",
+        "性能分析",
+        "发光",
+        "工学",
+        "工程",
+        "技术",
+        "计算机",
+        "软件",
+        "算法",
+        "机械",
+        "电子",
+        "通信",
+        "控制",
+        "材料",
+        "土木",
+        "水利",
+        "交通",
+        "环境",
+        "能源",
+        "智能",
+        "机械工程",
+        "材料科学与工程",
+        "电气工程",
+        "电子科学与技术",
+        "信息与通信工程",
+        "控制科学与工程",
+        "计算机科学与技术",
+        "软件工程",
+        "土木工程",
+        "水利工程",
+        "化学工程与技术",
+        "交通运输工程"
+      ]
+    },
+    "教育学": {
+      "label_id": 6,
+      "train_count": 319,
+      "authority_terms": [
+        "体育",
+        "体育学",
+        "培养",
+        "学习",
+        "学校",
+        "学生",
+        "应用心理",
+        "心理",
+        "心理学",
+        "教学",
+        "教师",
+        "教育",
+        "教育学",
+        "评价",
+        "课堂",
+        "课程"
+      ],
+      "data_terms": [
+        {
+          "term": "武术",
+          "score": 41.1061,
+          "label_df": 15,
+          "global_df": 15
+        },
+        {
+          "term": "运动员",
+          "score": 41.0127,
+          "label_df": 10,
+          "global_df": 10
+        },
+        {
+          "term": "竞技",
+          "score": 41.0127,
+          "label_df": 10,
+          "global_df": 10
+        },
+        {
+          "term": "校体育",
+          "score": 41.0127,
+          "label_df": 10,
+          "global_df": 10
+        },
+        {
+          "term": "国体育",
+          "score": 41.0127,
+          "label_df": 10,
+          "global_df": 10
+        },
+        {
+          "term": "我国体",
+          "score": 40.9359,
+          "label_df": 9,
+          "global_df": 9
+        },
+        {
+          "term": "技体育",
+          "score": 40.8249,
+          "label_df": 8,
+          "global_df": 8
+        },
+        {
+          "term": "体育课",
+          "score": 40.6674,
+          "label_df": 7,
+          "global_df": 7
+        },
+        {
+          "term": "体育教",
+          "score": 40.6674,
+          "label_df": 7,
+          "global_df": 7
+        },
+        {
+          "term": "育课程",
+          "score": 40.445,
+          "label_df": 6,
+          "global_df": 6
+        },
+        {
+          "term": "统体育",
+          "score": 40.445,
+          "label_df": 6,
+          "global_df": 6
+        },
+        {
+          "term": "族传统体",
+          "score": 40.445,
+          "label_df": 6,
+          "global_df": 6
+        },
+        {
+          "term": "体育发展",
+          "score": 40.445,
+          "label_df": 6,
+          "global_df": 6
+        },
+        {
+          "term": "专业发展",
+          "score": 40.445,
+          "label_df": 6,
+          "global_df": 6
+        },
+        {
+          "term": "育教学",
+          "score": 40.1274,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "教育学",
+          "score": 40.1274,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "教师专业",
+          "score": 40.1274,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "师教育",
+          "score": 40.1274,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "师专业发",
+          "score": 40.1274,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "健身",
+          "score": 40.1274,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "与体育",
+          "score": 40.1274,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "高校体",
+          "score": 39.6628,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "育社",
+          "score": 39.6628,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "育旅游",
+          "score": 39.6628,
+          "label_df": 4,
+          "global_df": 4
+        }
+      ],
+      "merged_terms": [
+        "武术",
+        "运动员",
+        "竞技",
+        "校体育",
+        "国体育",
+        "我国体",
+        "技体育",
+        "体育课",
+        "体育教",
+        "育课程",
+        "统体育",
+        "族传统体",
+        "体育发展",
+        "专业发展",
+        "育教学",
+        "教育学",
+        "教育",
+        "教学",
+        "课程",
+        "学习",
+        "学生",
+        "教师",
+        "学校",
+        "评价",
+        "心理",
+        "体育",
+        "培养",
+        "课堂",
+        "心理学",
+        "体育学",
+        "应用心理"
+      ]
+    },
+    "文学": {
+      "label_id": 7,
+      "train_count": 184,
+      "authority_terms": [
+        "中国语言文学",
+        "传播",
+        "写作",
+        "出版",
+        "叙事",
+        "外国语言文学",
+        "小说",
+        "文字",
+        "文学",
+        "文学理论",
+        "文本",
+        "新闻",
+        "新闻与传播",
+        "新闻传播学",
+        "翻译",
+        "诗歌",
+        "语言",
+        "语言文字"
+      ],
+      "data_terms": [
+        {
+          "term": "报道",
+          "score": 44.7267,
+          "label_df": 12,
+          "global_df": 12
+        },
+        {
+          "term": "词典",
+          "score": 44.4265,
+          "label_df": 6,
+          "global_df": 6
+        },
+        {
+          "term": "报纸",
+          "score": 44.4265,
+          "label_df": 6,
+          "global_df": 6
+        },
+        {
+          "term": "闻报",
+          "score": 43.8344,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "语词",
+          "score": 43.8344,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "记者",
+          "score": 43.8344,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "视媒",
+          "score": 43.8344,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "日报",
+          "score": 43.8344,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "新华",
+          "score": 43.8344,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "语语",
+          "score": 43.249,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "语法",
+          "score": 43.249,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "第四届",
+          "score": 43.249,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "新媒体",
+          "score": 43.249,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "文学",
+          "score": 43.249,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "播电视",
+          "score": 43.249,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "播中",
+          "score": 43.249,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "广播电",
+          "score": 43.249,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "周作人",
+          "score": 43.249,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "华社",
+          "score": 43.249,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "党报",
+          "score": 43.249,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "代汉语",
+          "score": 43.249,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "革新",
+          "score": 42.2307,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "闻评论",
+          "score": 42.2307,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "道如何",
+          "score": 42.2307,
+          "label_df": 2,
+          "global_df": 2
+        }
+      ],
+      "merged_terms": [
+        "报道",
+        "词典",
+        "报纸",
+        "闻报",
+        "语词",
+        "记者",
+        "视媒",
+        "日报",
+        "新华",
+        "语语",
+        "语法",
+        "第四届",
+        "新媒体",
+        "文学",
+        "播电视",
+        "播中",
+        "语言",
+        "文字",
+        "文本",
+        "写作",
+        "小说",
+        "诗歌",
+        "翻译",
+        "新闻",
+        "传播",
+        "出版",
+        "叙事",
+        "中国语言文学",
+        "外国语言文学",
+        "新闻传播学",
+        "新闻与传播",
+        "语言文字",
+        "文学理论"
+      ]
+    },
+    "法学": {
+      "label_id": 8,
+      "train_count": 443,
+      "authority_terms": [
+        "中共党史党建学",
+        "党建",
+        "制度",
+        "司法",
+        "政治",
+        "政治学",
+        "权利",
+        "民族",
+        "民族学",
+        "治理",
+        "法学",
+        "法律",
+        "知识产权",
+        "社会",
+        "社会学",
+        "社会工作",
+        "纪检监察学",
+        "马克思主义",
+        "马克思主义理论"
+      ],
+      "data_terms": [
+        {
+          "term": "民事",
+          "score": 38.4902,
+          "label_df": 8,
+          "global_df": 8
+        },
+        {
+          "term": "刑事",
+          "score": 38.4902,
+          "label_df": 8,
+          "global_df": 8
+        },
+        {
+          "term": "诉讼",
+          "score": 38.0241,
+          "label_df": 6,
+          "global_df": 6
+        },
+        {
+          "term": "中东",
+          "score": 38.0241,
+          "label_df": 6,
+          "global_df": 6
+        },
+        {
+          "term": "论商",
+          "score": 37.1263,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "苗族",
+          "score": 37.1263,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "法院",
+          "score": 37.1263,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "族自治",
+          "score": 37.1263,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "族区",
+          "score": 37.1263,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "政党",
+          "score": 37.1263,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "释论",
+          "score": 36.3381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "部民族地",
+          "score": 36.3381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "边疆",
+          "score": 36.3381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "谐社会构",
+          "score": 36.3381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "证法",
+          "score": 36.3381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "论民族",
+          "score": 36.3381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "西部民族",
+          "score": 36.3381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "经济全球",
+          "score": 36.3381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "社会构建",
+          "score": 36.3381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "的社会主",
+          "score": 36.3381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "的灵",
+          "score": 36.3381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "济全球化",
+          "score": 36.3381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "法解释",
+          "score": 36.3381,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "民行动",
+          "score": 36.3381,
+          "label_df": 3,
+          "global_df": 3
+        }
+      ],
+      "merged_terms": [
+        "民事",
+        "刑事",
+        "诉讼",
+        "中东",
+        "论商",
+        "苗族",
+        "法院",
+        "族自治",
+        "族区",
+        "政党",
+        "释论",
+        "部民族地",
+        "边疆",
+        "谐社会构",
+        "证法",
+        "论民族",
+        "法律",
+        "法学",
+        "司法",
+        "权利",
+        "制度",
+        "政治",
+        "社会",
+        "治理",
+        "民族",
+        "马克思主义",
+        "党建",
+        "知识产权",
+        "政治学",
+        "社会学",
+        "民族学",
+        "马克思主义理论",
+        "中共党史党建学",
+        "纪检监察学",
+        "社会工作"
+      ]
+    },
+    "理学": {
+      "label_id": 9,
+      "train_count": 747,
+      "authority_terms": [
+        "化学",
+        "地球物理学",
+        "地理",
+        "地理学",
+        "地质",
+        "地质学",
+        "大气",
+        "大气科学",
+        "天文",
+        "天文学",
+        "数学",
+        "海洋",
+        "海洋科学",
+        "物理",
+        "物理学",
+        "理学",
+        "理论",
+        "生态",
+        "生态学",
+        "生物",
+        "生物学",
+        "科学技术史",
+        "系统科学",
+        "统计",
+        "统计学"
+      ],
+      "data_terms": [
+        {
+          "term": "暴雨",
+          "score": 35.5887,
+          "label_df": 21,
+          "global_df": 21
+        },
+        {
+          "term": "降水",
+          "score": 35.5476,
+          "label_df": 26,
+          "global_df": 26
+        },
+        {
+          "term": "气温",
+          "score": 35.2721,
+          "label_df": 12,
+          "global_df": 12
+        },
+        {
+          "term": "的气候",
+          "score": 34.4053,
+          "label_df": 7,
+          "global_df": 7
+        },
+        {
+          "term": "报中的",
+          "score": 34.4053,
+          "label_df": 7,
+          "global_df": 7
+        },
+        {
+          "term": "大暴",
+          "score": 34.4053,
+          "label_df": 7,
+          "global_df": 7
+        },
+        {
+          "term": "b年",
+          "score": 34.4053,
+          "label_df": 7,
+          "global_df": 7
+        },
+        {
+          "term": "预报中",
+          "score": 34.0619,
+          "label_df": 6,
+          "global_df": 6
+        },
+        {
+          "term": "锆石UP",
+          "score": 34.0619,
+          "label_df": 6,
+          "global_df": 6
+        },
+        {
+          "term": "石UPb",
+          "score": 34.0619,
+          "label_df": 6,
+          "global_df": 6
+        },
+        {
+          "term": "气旋",
+          "score": 34.0619,
+          "label_df": 6,
+          "global_df": 6
+        },
+        {
+          "term": "雨的",
+          "score": 33.6048,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "际变化",
+          "score": 33.6048,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "锆石SH",
+          "score": 33.6048,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "石SHR",
+          "score": 33.6048,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "热带气",
+          "score": 33.6048,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "温变化",
+          "score": 33.6048,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "海气",
+          "score": 33.6048,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "洋海",
+          "score": 33.6048,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "时空分",
+          "score": 33.6048,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "季风",
+          "score": 33.6048,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "边值问题",
+          "score": 32.975,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "质岩",
+          "score": 32.975,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "节变化",
+          "score": 32.975,
+          "label_df": 4,
+          "global_df": 4
+        }
+      ],
+      "merged_terms": [
+        "暴雨",
+        "降水",
+        "气温",
+        "的气候",
+        "报中的",
+        "大暴",
+        "b年",
+        "预报中",
+        "锆石UP",
+        "石UPb",
+        "气旋",
+        "雨的",
+        "际变化",
+        "锆石SH",
+        "石SHR",
+        "热带气",
+        "理学",
+        "数学",
+        "物理",
+        "化学",
+        "生物",
+        "地理",
+        "天文",
+        "地质",
+        "海洋",
+        "大气",
+        "生态",
+        "统计",
+        "理论",
+        "物理学",
+        "天文学",
+        "地理学",
+        "大气科学",
+        "海洋科学",
+        "地球物理学",
+        "地质学",
+        "生物学",
+        "系统科学",
+        "科学技术史",
+        "生态学",
+        "统计学"
+      ]
+    },
+    "管理学": {
+      "label_id": 10,
+      "train_count": 497,
+      "authority_terms": [
+        "企业",
+        "会计",
+        "信息管理",
+        "信息资源管理",
+        "公共管理",
+        "公共管理学",
+        "农林经济管理",
+        "决策",
+        "图书情报",
+        "审计",
+        "工商",
+        "工商管理学",
+        "工程管理",
+        "管理",
+        "管理科学与工程",
+        "组织",
+        "绩效",
+        "资源管理"
+      ],
+      "data_terms": [
+        {
+          "term": "高校图书",
+          "score": 37.9433,
+          "label_df": 10,
+          "global_df": 10
+        },
+        {
+          "term": "校图书馆",
+          "score": 37.9433,
+          "label_df": 10,
+          "global_df": 10
+        },
+        {
+          "term": "执法",
+          "score": 37.4499,
+          "label_df": 7,
+          "global_df": 7
+        },
+        {
+          "term": "工商行政",
+          "score": 36.776,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "图书馆的",
+          "score": 36.776,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "馆服务",
+          "score": 36.2265,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "领导者",
+          "score": 36.2265,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "识经济",
+          "score": 36.2265,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "行政执",
+          "score": 36.2265,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "知识经",
+          "score": 36.2265,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "林权",
+          "score": 36.2265,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "共卫生",
+          "score": 36.2265,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "公共卫",
+          "score": 36.2265,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "馆社会",
+          "score": 35.4111,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "馆员",
+          "score": 35.4111,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "馆创",
+          "score": 35.4111,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "资源建",
+          "score": 35.4111,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "证分析基",
+          "score": 35.4111,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "行政管理",
+          "score": 35.4111,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "著录",
+          "score": 35.4111,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "落实",
+          "score": 35.4111,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "网络信息",
+          "score": 35.4111,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "经济时代",
+          "score": 35.4111,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "的图书馆",
+          "score": 35.4111,
+          "label_df": 3,
+          "global_df": 3
+        }
+      ],
+      "merged_terms": [
+        "高校图书",
+        "校图书馆",
+        "执法",
+        "工商行政",
+        "图书馆的",
+        "馆服务",
+        "领导者",
+        "识经济",
+        "行政执",
+        "知识经",
+        "林权",
+        "共卫生",
+        "公共卫",
+        "馆社会",
+        "馆员",
+        "馆创",
+        "管理",
+        "组织",
+        "企业",
+        "工商",
+        "公共管理",
+        "信息管理",
+        "资源管理",
+        "会计",
+        "审计",
+        "决策",
+        "绩效",
+        "图书情报",
+        "管理科学与工程",
+        "工商管理学",
+        "农林经济管理",
+        "公共管理学",
+        "信息资源管理",
+        "工程管理"
+      ]
+    },
+    "经济学": {
+      "label_id": 11,
+      "train_count": 283,
+      "authority_terms": [
+        "产业",
+        "保险",
+        "国际商务",
+        "宏观",
+        "审计",
+        "市场",
+        "应用经济学",
+        "应用统计",
+        "微观",
+        "投资",
+        "数字经济",
+        "理论经济学",
+        "税务",
+        "税收",
+        "经济",
+        "统计",
+        "财政",
+        "贸易",
+        "资产评估",
+        "金融"
+      ],
+      "data_terms": [
+        {
+          "term": "贸易的",
+          "score": 41.0199,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "对外贸易",
+          "score": 41.0199,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "国对外",
+          "score": 41.0199,
+          "label_df": 5,
+          "global_df": 5
+        },
+        {
+          "term": "货币",
+          "score": 40.5779,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "期权",
+          "score": 40.5779,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "我国对",
+          "score": 40.5779,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "我国出口",
+          "score": 40.5779,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "我国上市",
+          "score": 40.5779,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "国上市公",
+          "score": 40.5779,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "商业银行",
+          "score": 40.5779,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "口贸易",
+          "score": 40.5779,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "出口贸",
+          "score": 40.5779,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "与产",
+          "score": 40.5779,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "际贸易",
+          "score": 39.894,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "证券化",
+          "score": 39.894,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "股权",
+          "score": 39.894,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "激励机制",
+          "score": 39.894,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "术进步",
+          "score": 39.894,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "服务贸易",
+          "score": 39.894,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "政府行为",
+          "score": 39.894,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "市场发",
+          "score": 39.894,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "展基于",
+          "score": 39.894,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "外投资",
+          "score": 39.894,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "外国直接",
+          "score": 39.894,
+          "label_df": 3,
+          "global_df": 3
+        }
+      ],
+      "merged_terms": [
+        "贸易的",
+        "对外贸易",
+        "国对外",
+        "货币",
+        "期权",
+        "我国对",
+        "我国出口",
+        "我国上市",
+        "国上市公",
+        "商业银行",
+        "口贸易",
+        "出口贸",
+        "与产",
+        "际贸易",
+        "证券化",
+        "股权",
+        "经济",
+        "金融",
+        "贸易",
+        "产业",
+        "财政",
+        "税收",
+        "统计",
+        "市场",
+        "宏观",
+        "微观",
+        "投资",
+        "数字经济",
+        "理论经济学",
+        "应用经济学",
+        "应用统计",
+        "税务",
+        "国际商务",
+        "保险",
+        "资产评估",
+        "审计"
+      ]
+    },
+    "艺术学": {
+      "label_id": 12,
+      "train_count": 101,
+      "authority_terms": [
+        "书法",
+        "审美",
+        "影视",
+        "戏剧",
+        "戏剧与影视",
+        "戏曲",
+        "戏曲与曲艺",
+        "曲艺",
+        "美术",
+        "美术与书法",
+        "舞蹈",
+        "艺术",
+        "艺术学",
+        "艺术教育",
+        "设计",
+        "音乐"
+      ],
+      "data_terms": [
+        {
+          "term": "绘画",
+          "score": 48.3053,
+          "label_df": 4,
+          "global_df": 4
+        },
+        {
+          "term": "饰艺术",
+          "score": 47.855,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "钢琴",
+          "score": 47.855,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "装饰艺",
+          "score": 47.855,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "艺术创作",
+          "score": 47.855,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "舞台",
+          "score": 47.855,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "画艺术",
+          "score": 47.855,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "昆曲",
+          "score": 47.855,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "戏曲",
+          "score": 47.855,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "乐教学",
+          "score": 47.855,
+          "label_df": 3,
+          "global_df": 3
+        },
+        {
+          "term": "高校艺术",
+          "score": 47.011,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "音乐剧",
+          "score": 47.011,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "艺术风",
+          "score": 47.011,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "艺术科",
+          "score": 47.011,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "艺术专业",
+          "score": 47.011,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "的审美",
+          "score": 47.011,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "琴音乐",
+          "score": 47.011,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "演奏",
+          "score": 47.011,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "演唱",
+          "score": 47.011,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "教学实",
+          "score": 47.011,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "意味",
+          "score": 47.011,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "年中国电",
+          "score": 47.011,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "对高师",
+          "score": 47.011,
+          "label_df": 2,
+          "global_df": 2
+        },
+        {
+          "term": "剧创作",
+          "score": 47.011,
+          "label_df": 2,
+          "global_df": 2
+        }
+      ],
+      "merged_terms": [
+        "绘画",
+        "饰艺术",
+        "钢琴",
+        "装饰艺",
+        "艺术创作",
+        "舞台",
+        "画艺术",
+        "昆曲",
+        "戏曲",
+        "乐教学",
+        "高校艺术",
+        "音乐剧",
+        "艺术风",
+        "艺术科",
+        "艺术专业",
+        "的审美",
+        "艺术",
+        "音乐",
+        "舞蹈",
+        "美术",
+        "书法",
+        "设计",
+        "戏剧",
+        "影视",
+        "曲艺",
+        "审美",
+        "艺术教育",
+        "艺术学",
+        "戏剧与影视",
+        "美术与书法",
+        "戏曲与曲艺"
+      ]
+    }
+  }
+}

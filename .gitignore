@@ -1,0 +1,99 @@
+# Python / tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Local environments
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+**/.DS_Store
+.idea/
+.vscode/
+
+# newALG generated outputs
+outputs/artifacts/
+outputs/cache/
+outputs/pretrained/
+outputs/logs/
+outputs/proposals/
+outputs/runs.duckdb
+outputs/runs.duckdb.*
+outputs/judge_report.json
+outputs/method_cards.jsonl
+backup_artifacts_*/
+
+# Keep public repository lightweight. Generated reports and run artifacts stay
+# local; paper-level evidence is copied into paper/tables, paper/figures, and
+# artifact_manifest.md.
+outputs/
+
+# Heavy or derived experiment files
+*.pt
+*.pth
+*.safetensors
+*.parquet
+*.duckdb
+*.zip
+
+# Official/hidden-test prediction files: keep local unless explicitly publishing privately.
+outputs/submissions/
+
+# Test-generated local state
+tests/tmp_outputs/
+
+# LaTeX and arXiv packaging byproducts. Keep source .tex/.bib, table .tex,
+# and figure .pdf/.svg instead of generated upload/review archives.
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.synctex.gz
+paper/**/main.pdf
+paper/arxiv_autotail_technical_report/
+paper/**/arxiv_source/
+paper/**/arxiv_source.zip
+paper/**/*review_package*.zip
+paper/**/THU-NMRC_arxiv_review_package_*/
+paper/**/reference_links*.html
+paper/**/reference_links*.md
+paper/**/figures/*.png
+paper/**/figures/main_deltas.*
+paper/**/figures/score_profiles.*
+
+# Copyrighted or licensed source PDFs used only for local reading/template
+# comparison. Cite them via DOI/URL in references.bib instead of publishing.
+references/
+
+# Local history and exploratory side work not included in the paper-release
+# repository.
+backups/
+handoff/
+scripts/
+
+# Experiment configs: keep only the paper-reproduction configs in the public
+# repository. The excluded files are earlier TNEWS/IFLYTEK/agent-search trials.
+configs/*
+!configs/research_task.yaml
+!configs/jasist_csl_abstract_screen_seed13.yaml
+!configs/jasist_csl_abstract_screen_seed42.yaml
+!configs/jasist_csl_abstract_confirm_seed3407.yaml
+!configs/jasist_csl_abstract_macbert_seed13.yaml
+!configs/jasist_csl_abstract_macbert_seed42.yaml
+!configs/jasist_csl_abstract_macbert_seed3407.yaml
+!configs/jasist_csl_cls_ctg_macbert_3seed.yaml
+!configs/jasist_csl_abstract_ablation_seed13.yaml
+!configs/jasist_csl_abstract_fgm_ablation_seed13.yaml
+!configs/jasist_csl_abstract_fgm_ablation_seed42.yaml
+!configs/jasist_csl_abstract_tfidf_teacher_ablation_seed13.yaml

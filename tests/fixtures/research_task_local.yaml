@@ -1,0 +1,87 @@
+task_name: toy_research
+output_root: tests/tmp_outputs
+registry_path: tests/tmp_outputs/runs.duckdb
+artifacts_dir: tests/tmp_outputs/artifacts
+reports_dir: tests/tmp_outputs/reports
+method_cards_path: tests/tmp_outputs/method_cards.jsonl
+proposals_dir: tests/tmp_outputs/proposals
+primary_dataset: tnews
+sanity_dataset: iflytek
+metric_name: accuracy
+lockbox_fraction: 0.2
+lockbox_seed: 7
+random_seeds: [13, 42, 3407]
+max_cost_ratio: 2.0
+validation_delta_threshold: 1.0
+lockbox_delta_threshold: 1.0
+significance_alpha: 0.1
+device_preference: cpu
+datasets:
+  tnews:
+    source: local
+    local_path: tests/fixtures/toy_primary
+    text_field: sentence
+    label_field: label
+    train_split: train
+    validation_split: validation
+    test_split: test
+    max_length: 64
+  iflytek:
+    source: local
+    local_path: tests/fixtures/toy_sanity
+    text_field: sentence
+    label_field: label
+    train_split: train
+    validation_split: validation
+    test_split: test
+    max_length: 64
+llm:
+  provider: rulebased
+training:
+  train_batch_size: 4
+  eval_batch_size: 4
+  learning_rate: 2.0e-5
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  warmup_ratio: 0.1
+  dropout: 0.1
+  max_epochs: 1
+  smoke_epochs: 1
+  num_workers: 0
+budgets:
+  smoke:
+    epochs: 1
+    sample_cap: 9
+    seed_count: 1
+    max_candidates: 3
+  screen:
+    epochs: 1
+    sample_cap: 9
+    seed_count: 1
+    max_candidates: 3
+  confirm:
+    epochs: 1
+    sample_cap: null
+    seed_count: 2
+    max_candidates: 2
+  final:
+    epochs: 1
+    sample_cap: null
+    seed_count: 3
+    max_candidates: 2
+baselines:
+  traditional:
+    - tfidf_logreg
+    - tfidf_linear_svm
+  transformer:
+    - name: tiny-bert
+      model_id: hf-internal-testing/tiny-random-bert
+allowed_modules:
+  pooling: [cls, mean, attention]
+  head: [linear, mlp, prototype, label_semantic]
+  loss: [ce, focal, label_smoothing, prior_adjusted_label_smoothing, ce_supcon, label_anchor_contrastive, rdrop]
+  schedule: [full_ft, gradual_unfreeze, layerwise_lr_decay]
+  augmentation: [none, token_mask, span_cutoff]
+stop_conditions:
+  max_total_runs: 10
+  no_improvement_rounds: 2

@@ -1,0 +1,6 @@
+{"sentence":"球队 赢得 比赛","label":0,"sample_id":101}
+{"sentence":"前锋 完成 绝杀","label":0,"sample_id":102}
+{"sentence":"手机 电池 续航 提升","label":1,"sample_id":103}
+{"sentence":"云 服务 平台 升级","label":1,"sample_id":104}
+{"sentence":"宏观 经济 指标 改善","label":2,"sample_id":105}
+{"sentence":"投资 风险 偏好 回升","label":2,"sample_id":106}

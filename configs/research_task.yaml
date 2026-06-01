@@ -1,0 +1,185 @@
+task_name: tnews_research_v1
+output_root: outputs
+registry_path: outputs/runs.duckdb
+artifacts_dir: outputs/artifacts
+reports_dir: outputs/reports
+method_cards_path: outputs/method_cards.jsonl
+proposals_dir: outputs/proposals
+primary_dataset: tnews
+sanity_dataset: iflytek
+metric_name: accuracy
+lockbox_fraction: 0.1
+lockbox_seed: 3407
+random_seeds: [13, 42, 3407, 2025, 7777]
+max_cost_ratio: 1.5
+validation_delta_threshold: 0.5
+lockbox_delta_threshold: 0.3
+significance_alpha: 0.05
+device_preference: auto
+datasets:
+  tnews:
+    source: huggingface
+    hf_path: clue
+    hf_name: tnews
+    text_field: sentence
+    label_field: label
+    train_split: train
+    validation_split: validation
+    test_split: test
+    max_length: 128
+  iflytek:
+    source: huggingface
+    hf_path: clue
+    hf_name: iflytek
+    text_field: sentence
+    label_field: label
+    train_split: train
+    validation_split: validation
+    test_split: test
+    max_length: 256
+  csl_cls_ctg:
+    source: local
+    local_path: data/csl_cls_ctg
+    text_field: sentence
+    label_field: label
+    train_split: train
+    validation_split: validation
+    test_split: test
+    max_length: 128
+  csl_instruction_discipline_abstract:
+    source: local
+    local_path: data/csl_instruction_discipline_abstract
+    text_field: sentence
+    label_field: label
+    train_split: train
+    validation_split: validation
+    test_split: test
+    max_length: 256
+llm:
+  provider: rulebased
+  model: gpt-5.4-mini
+  temperature: 0.1
+  max_output_tokens: 2000
+training:
+  train_batch_size: 16
+  eval_batch_size: 32
+  learning_rate: 2.0e-5
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  warmup_ratio: 0.1
+  dropout: 0.1
+  max_epochs: 3
+  smoke_epochs: 1
+  num_workers: 0
+budgets:
+  smoke:
+    epochs: 1
+    sample_cap: 1024
+    seed_count: 1
+    max_candidates: 6
+  screen:
+    epochs: 2
+    sample_cap: null
+    seed_count: 1
+    max_candidates: 8
+  confirm:
+    epochs: 3
+    sample_cap: null
+    seed_count: 3
+    max_candidates: 5
+  final:
+    epochs: 3
+    sample_cap: null
+    seed_count: 5
+    max_candidates: 3
+baselines:
+  traditional:
+    - tfidf_logreg
+    - tfidf_linear_svm
+  transformer:
+    - name: bert-base-chinese
+      model_id: bert-base-chinese
+    - name: roberta-wwm-ext
+      model_id: hfl/chinese-roberta-wwm-ext
+allowed_modules:
+  pooling: [cls, mean, attention]
+  head: [linear, mlp, prototype, label_semantic, label_attention, residual_label_attention]
+  loss: [ce, focal, label_smoothing, class_balanced, balanced_softmax, ldam, ldam_drw, prior_adjusted_label_smoothing, tail_weighted_label_smoothing, ce_supcon, label_anchor_contrastive, rdrop]
+  schedule: [full_ft, gradual_unfreeze, layerwise_lr_decay]
+  augmentation: [none, token_mask, span_cutoff]
+stop_conditions:
+  max_total_runs: 30
+  no_improvement_rounds: 3
+agent_research:
+  per_leaderboard_candidate_budget: 12
+  promotion_gate: beat_strong_baseline
+  lockbox_regression_tolerance: 0.1
+  min_idea_count: 6
+  min_qualified_papers: 8
+  paper_quality_threshold: 0.45
+  max_scout_rounds: 4
+  require_llm_insight_review: true
+  require_llm_idea_review: true
+  min_worth_synthesizing_papers: 5
+  min_full_text_analyses: 4
+  evidence_year_window: 3
+  paper_sources: [bootstrap, openalex, arxiv, acl_anthology]
+  output_dir: outputs/agents
+leaderboards:
+  - task_id: tnews
+    dataset: tnews
+    display_name: CLUE TNEWS
+    benchmark: CLUE
+    metric: accuracy
+    train_rows: 53360
+    validation_rows: 10000
+    test_rows: 10000
+    official_url: https://github.com/CLUEbenchmark/CLUE
+    submission_format: jsonl
+    strong_baseline_name: ALBERT-xxlarge
+    strong_baseline_score: 59.46
+    status: active
+    priority: 100
+    notes: Toutiao short news title classification.
+  - task_id: iflytek
+    dataset: iflytek
+    display_name: CLUE IFLYTEK
+    benchmark: CLUE
+    metric: accuracy
+    official_url: https://github.com/CLUEbenchmark/CLUE
+    submission_format: jsonl
+    strong_baseline_name: RoBERTa-wwm-ext
+    strong_baseline_score: 60.71
+    status: active
+    priority: 90
+    notes: Long app description classification sanity and fallback leaderboard.
+  - task_id: csl_cls_ctg
+    dataset: csl_cls_ctg
+    display_name: CSL Category Classification
+    benchmark: CSL
+    metric: accuracy
+    train_rows: 8000
+    validation_rows: 1000
+    test_rows: 1000
+    official_url: https://github.com/ydli-ai/CSL/tree/master/benchmark/cls_ctg
+    submission_format: local_tsv
+    strong_baseline_name: pending_local_reproduction
+    strong_baseline_score: null
+    status: active
+    priority: 80
+    notes: COLING 2022 CSL title-to-category task; 13 labels and strongly imbalanced train distribution, selected as second long-tail validation task.
+  - task_id: csl_instruction_discipline_abstract
+    dataset: csl_instruction_discipline_abstract
+    display_name: CSL Abstract Discipline Classification
+    benchmark: CSL Instruction / CSL Full Metadata
+    metric: accuracy
+    train_rows: 9600
+    validation_rows: 1200
+    test_rows: 1200
+    official_url: https://github.com/ydli-ai/CSL
+    submission_format: local_jsonl
+    strong_baseline_name: pending_local_reproduction
+    strong_baseline_score: null
+    status: active
+    priority: 85
+    notes: Abstract-to-67-discipline subset derived from CSL instruction data; added for JASIST-style scholarly metadata validation.

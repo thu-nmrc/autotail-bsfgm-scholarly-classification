@@ -1,0 +1,5 @@
+comparison,split,baseline_only_correct,candidate_only_correct,both_correct,both_wrong,discordant,exact_mcnemar_p
+Abstract/MacBERT validation,validation,67,97,2376,1060,164,0.02324899965172051
+Abstract/MacBERT lockbox,lockbox,64,78,1935,803,142,0.27524996897157333
+Title/MacBERT validation,validation,51,72,2398,479,123,0.07090166737501422
+Title/MacBERT lockbox,lockbox,47,45,1933,375,92,0.9170405196524724

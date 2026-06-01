@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="920" viewBox="0 0 1400 920">
+<defs>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth"><path d="M2,2 L10,6 L2,10 Z" fill="#9eb0a3"/></marker>
+  <filter id="shadow" x="-12%" y="-12%" width="124%" height="140%"><feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#000" flood-opacity="0.13"/></filter>
+</defs>
+<rect x="0" y="0" width="1400" height="920" fill="#ffffff"/>
+<text x="70" y="70" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" fill="#203a33" text-anchor="start" >CSL-based scholarly classification: task construction and audit protocol</text>
+<line x1="70" y1="84" x2="1330" y2="84" stroke="#b8c4bb" stroke-width="2"/>
+<text x="70" y="118" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#69736e" text-anchor="start" >The figure separates data construction, task contrast, and the fixed evidence protocol used for balance-aware evaluation.</text>
+<rect x="85" y="165" width="205" height="82" rx="12" fill="#f7f8f5" stroke="#aab8ad" stroke-width="2"/>
+<text x="187.5" y="197" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#203a33" text-anchor="middle" >CSL records</text>
+<text x="187.5" y="221" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="500" fill="#69736e" text-anchor="middle" >titles, abstracts,</text>
+<text x="187.5" y="242" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="500" fill="#69736e" text-anchor="middle" >metadata</text>
+<line x1="298" y1="206.0" x2="332" y2="206.0" stroke="#9eb0a3" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="340" y="165" width="205" height="82" rx="12" fill="#f7f8f5" stroke="#aab8ad" stroke-width="2"/>
+<text x="442.5" y="197" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#203a33" text-anchor="middle" >Task construction</text>
+<text x="442.5" y="221" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="500" fill="#69736e" text-anchor="middle" >abstract task +</text>
+<text x="442.5" y="242" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="500" fill="#69736e" text-anchor="middle" >title task</text>
+<line x1="553" y1="206.0" x2="587" y2="206.0" stroke="#9eb0a3" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="595" y="165" width="205" height="82" rx="12" fill="#f7f8f5" stroke="#aab8ad" stroke-width="2"/>
+<text x="697.5" y="197" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#203a33" text-anchor="middle" >Fixed splits</text>
+<text x="697.5" y="221" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="500" fill="#69736e" text-anchor="middle" >train / val /</text>
+<text x="697.5" y="242" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="500" fill="#69736e" text-anchor="middle" >lockbox / test</text>
+<line x1="808" y1="206.0" x2="842" y2="206.0" stroke="#9eb0a3" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="850" y="165" width="205" height="82" rx="12" fill="#f7f8f5" stroke="#aab8ad" stroke-width="2"/>
+<text x="952.5" y="197" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#203a33" text-anchor="middle" >Same-encoder runs</text>
+<text x="952.5" y="221" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="500" fill="#69736e" text-anchor="middle" >RoBERTa-WWM</text>
+<text x="952.5" y="242" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="500" fill="#69736e" text-anchor="middle" >MacBERT</text>
+<line x1="1063" y1="206.0" x2="1097" y2="206.0" stroke="#9eb0a3" stroke-width="2.4" marker-end="url(#arrow)"/>
+<rect x="1105" y="165" width="205" height="82" rx="12" fill="#f7f8f5" stroke="#aab8ad" stroke-width="2"/>
+<text x="1207.5" y="197" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#203a33" text-anchor="middle" >Audit evidence</text>
+<text x="1207.5" y="221" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="500" fill="#69736e" text-anchor="middle" >accuracy + macro-F1</text>
+<text x="1207.5" y="242" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="500" fill="#69736e" text-anchor="middle" >balanced accuracy</text>
+<g filter="url(#shadow)"><rect x="90" y="300" width="575" height="300" rx="18" fill="white" stroke="#203a33" stroke-width="2.8"/></g>
+<rect x="90" y="300" width="575" height="72" rx="18" fill="#eef3ee" stroke="none"/>
+<text x="122" y="345" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#203a33" text-anchor="start" >Abstract-to-discipline</text>
+<text x="122" y="370" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="500" fill="#69736e" text-anchor="start" >Primary task: richer evidence, fine-grained taxonomy</text>
+<rect x="124" y="392" width="95" height="34" rx="0" fill="#f7f8f5" stroke="#a9b8ac" stroke-width="1.5"/>
+<text x="136" y="414" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#49665b" text-anchor="start" >Input</text>
+<text x="250" y="414" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#25302c" text-anchor="start" >scientific paper abstract</text>
+<rect x="124" y="440" width="95" height="34" rx="0" fill="#f7f8f5" stroke="#a9b8ac" stroke-width="1.5"/>
+<text x="136" y="462" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#49665b" text-anchor="start" >Labels</text>
+<text x="250" y="462" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#25302c" text-anchor="start" >67 discipline labels</text>
+<rect x="124" y="488" width="95" height="34" rx="0" fill="#f7f8f5" stroke="#a9b8ac" stroke-width="1.5"/>
+<text x="136" y="510" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#49665b" text-anchor="start" >Max</text>
+<text x="250" y="510" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#25302c" text-anchor="start" >256 tokens</text>
+<text x="445" y="442" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#69736e" text-anchor="middle" >Main classification pressure</text>
+<rect x="375" y="460" width="230" height="36" rx="6" fill="#eef3ee" stroke="none" stroke-width="2"/>
+<text x="490" y="484" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#203a33" text-anchor="middle" >long-tailed taxonomy</text>
+<rect x="375" y="505" width="230" height="36" rx="6" fill="#f4efe2" stroke="none" stroke-width="2"/>
+<text x="490" y="529" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#203a33" text-anchor="middle" >adjacent disciplines</text>
+<text x="124" y="563" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#203a33" text-anchor="start" >Split protocol</text>
+<rect x="260" y="547" width="251.99999999999997" height="18" fill="#3f6f5e" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="512.0" y="547" width="36.0" height="18" fill="#7e987f" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="548.0" y="547" width="28.8" height="18" fill="#c9bb93" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="576.8" y="547" width="43.199999999999996" height="18" fill="#78909b" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="260" y="547" width="360" height="18" rx="0" fill="none" stroke="#aab8ad" stroke-width="1.5"/>
+<text x="260" y="597" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#69736e" text-anchor="start" >Train / Val / Lockbox / Test: 8,640 / 1,200 / 960 / 1,200</text>
+<g filter="url(#shadow)"><rect x="735" y="300" width="575" height="300" rx="18" fill="white" stroke="#203a33" stroke-width="2.8"/></g>
+<rect x="735" y="300" width="575" height="72" rx="18" fill="#eef3ee" stroke="none"/>
+<text x="767" y="345" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#203a33" text-anchor="start" >Title-to-category</text>
+<text x="767" y="370" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="500" fill="#69736e" text-anchor="start" >Stress task: compressed evidence, broad taxonomy</text>
+<rect x="769" y="392" width="95" height="34" rx="0" fill="#f7f8f5" stroke="#a9b8ac" stroke-width="1.5"/>
+<text x="781" y="414" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#49665b" text-anchor="start" >Input</text>
+<text x="895" y="414" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#25302c" text-anchor="start" >scientific paper title</text>
+<rect x="769" y="440" width="95" height="34" rx="0" fill="#f7f8f5" stroke="#a9b8ac" stroke-width="1.5"/>
+<text x="781" y="462" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#49665b" text-anchor="start" >Labels</text>
+<text x="895" y="462" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#25302c" text-anchor="start" >13 broad categories</text>
+<rect x="769" y="488" width="95" height="34" rx="0" fill="#f7f8f5" stroke="#a9b8ac" stroke-width="1.5"/>
+<text x="781" y="510" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#49665b" text-anchor="start" >Max</text>
+<text x="895" y="510" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#25302c" text-anchor="start" >128 tokens</text>
+<text x="1090" y="442" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#69736e" text-anchor="middle" >Main classification pressure</text>
+<rect x="1020" y="460" width="230" height="36" rx="6" fill="#eef3ee" stroke="none" stroke-width="2"/>
+<text x="1135" y="484" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#203a33" text-anchor="middle" >short-text ambiguity</text>
+<rect x="1020" y="505" width="230" height="36" rx="6" fill="#f4efe2" stroke="none" stroke-width="2"/>
+<text x="1135" y="529" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#203a33" text-anchor="middle" >lexical dominance</text>
+<text x="769" y="563" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#203a33" text-anchor="start" >Split protocol</text>
+<rect x="905" y="547" width="251.99999999999997" height="18" fill="#3f6f5e" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="1157.0" y="547" width="36.0" height="18" fill="#7e987f" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="1193.0" y="547" width="28.8" height="18" fill="#c9bb93" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="1221.8" y="547" width="43.199999999999996" height="18" fill="#78909b" stroke="#ffffff" stroke-width="1.2"/>
+<rect x="905" y="547" width="360" height="18" rx="0" fill="none" stroke="#aab8ad" stroke-width="1.5"/>
+<text x="905" y="597" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#69736e" text-anchor="start" >Train / Val / Lockbox / Test: 7,200 / 1,000 / 800 / 1,000</text>
+<line x1="700" y1="302" x2="700" y2="600" stroke="#aab8ad" stroke-width="2" stroke-dasharray="6 6"/>
+<rect x="145" y="665" width="1110" height="150" rx="14" fill="#f7f8f5" stroke="#aab8ad" stroke-width="2"/>
+<text x="180" y="707" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#203a33" text-anchor="start" >Evaluation protocol</text>
+<circle cx="195" cy="757" r="12" fill="#203a33"/>
+<text x="223" y="743" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#203a33" text-anchor="start" >Model control</text>
+<text x="223" y="766" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#25302c" text-anchor="start" >same encoder +</text>
+<text x="223" y="786" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#25302c" text-anchor="start" >linear classifier</text>
+<circle cx="465" cy="757" r="12" fill="#203a33"/>
+<text x="493" y="743" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#203a33" text-anchor="start" >Randomness</text>
+<text x="493" y="766" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#25302c" text-anchor="start" >seeds 13, 42,</text>
+<text x="493" y="786" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#25302c" text-anchor="start" >3407</text>
+<circle cx="735" cy="757" r="12" fill="#203a33"/>
+<text x="763" y="743" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#203a33" text-anchor="start" >Evidence</text>
+<text x="763" y="766" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#25302c" text-anchor="start" >validation plus</text>
+<text x="763" y="786" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#25302c" text-anchor="start" >fixed lockbox</text>
+<circle cx="1005" cy="757" r="12" fill="#203a33"/>
+<text x="1033" y="743" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#203a33" text-anchor="start" >Metrics</text>
+<text x="1033" y="766" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#25302c" text-anchor="start" >accuracy, macro-F1,</text>
+<text x="1033" y="786" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#25302c" text-anchor="start" >balanced accuracy</text>
+<text x="700" y="865" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" fill="#69736e" text-anchor="middle" >Purpose: test whether a tail-aware training objective improves scholarly metadata classification without changing inference-time deployment.</text>
+</svg>

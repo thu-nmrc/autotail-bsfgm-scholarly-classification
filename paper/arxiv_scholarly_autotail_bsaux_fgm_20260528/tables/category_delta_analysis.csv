@@ -1,0 +1,13 @@
+task,dataset,split,band,examples_x_seed,baseline_accuracy,candidate_accuracy,delta_accuracy
+Abstract/MacBERT,csl_instruction_discipline_abstract,validation,Tail,684,53.3625730994152,54.09356725146199,0.7309941520467933
+Abstract/MacBERT,csl_instruction_discipline_abstract,validation,Mid,1182,71.15059221658207,72.41962774957699,1.269035532994922
+Abstract/MacBERT,csl_instruction_discipline_abstract,validation,Head,1734,71.33794694348327,71.91464821222607,0.5767012687427853
+Abstract/MacBERT,csl_instruction_discipline_abstract,lockbox,Tail,549,53.36976320582878,54.462659380692166,1.0928961748633892
+Abstract/MacBERT,csl_instruction_discipline_abstract,lockbox,Mid,942,68.04670912951167,69.32059447983015,1.273885350318471
+Abstract/MacBERT,csl_instruction_discipline_abstract,lockbox,Head,1389,76.67386609071274,76.38588912886969,-0.28797696184305055
+Title/MacBERT,csl_cls_ctg,validation,Tail,282,63.829787234042556,69.8581560283688,6.028368794326234
+Title/MacBERT,csl_cls_ctg,validation,Mid,507,73.57001972386587,71.99211045364892,-1.5779092702169595
+Title/MacBERT,csl_cls_ctg,validation,Head,2211,85.75305291723203,86.29579375848031,0.5427408412483015
+Title/MacBERT,csl_cls_ctg,lockbox,Tail,189,73.54497354497354,75.66137566137566,2.1164021164021163
+Title/MacBERT,csl_cls_ctg,lockbox,Mid,462,75.10822510822511,72.94372294372295,-2.164502164502169
+Title/MacBERT,csl_cls_ctg,lockbox,Head,1749,85.42024013722127,85.64894225271584,0.2287021154945723

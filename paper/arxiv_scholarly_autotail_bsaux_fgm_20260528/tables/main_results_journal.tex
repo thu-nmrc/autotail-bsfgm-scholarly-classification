@@ -1,0 +1,14 @@
+\scriptsize
+\setlength{\tabcolsep}{2.2pt}
+\begin{tabular}{@{}lllrrrrrrr@{}}
+\toprule
+Task & Encoder & Method & Val Acc & Val Macro & Val Bal. & Lock Acc & Lock Macro & Lock Bal. & Sec. \\
+\midrule
+Abstract & RoBERTa-WWM & Label smoothing & 67.28 & 64.59 & 64.13 & 68.96 & 65.10 & 64.64 & 2076 \\
+Abstract & RoBERTa-WWM & AutoTail-BSFGM & 68.69 & 66.20 & 65.61 & 69.44 & 65.85 & 65.31 & 3290 \\
+Abstract & MacBERT & Label smoothing & 67.86 & 65.09 & 64.59 & 69.41 & 65.71 & 65.02 & 1970 \\
+Abstract & MacBERT & AutoTail-BSFGM & 68.69 & 65.98 & 65.43 & 69.90 & 66.30 & 65.55 & 3891 \\
+Title & MacBERT & Label smoothing & 81.63 & 72.50 & 71.23 & 82.50 & 75.76 & 74.49 & 427 \\
+Title & MacBERT & AutoTail-BSFGM & 82.33 & 73.83 & 73.87 & 82.42 & 76.02 & 75.71 & 680 \\
+\bottomrule
+\end{tabular}

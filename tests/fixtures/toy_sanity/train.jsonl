@@ -1,0 +1,6 @@
+{"sentence":"应用 商店 推荐 新 软件","label":0,"sample_id":1}
+{"sentence":"办公 工具 文档 协作","label":0,"sample_id":2}
+{"sentence":"地图 导航 路线 规划","label":1,"sample_id":3}
+{"sentence":"出行 软件 叫车 服务","label":1,"sample_id":4}
+{"sentence":"音乐 播放 歌单 推荐","label":2,"sample_id":5}
+{"sentence":"视频 平台 追剧 会员","label":2,"sample_id":6}

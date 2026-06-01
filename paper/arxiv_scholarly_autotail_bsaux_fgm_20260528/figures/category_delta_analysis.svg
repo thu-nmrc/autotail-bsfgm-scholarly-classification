@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="690" viewBox="0 0 1200 690">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#2f443d" />
+    </marker>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="1200" height="690" fill="#ffffff"/>
+<text x="95" y="52" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" text-anchor="start" fill="#203a33">Category-frequency band analysis</text>
+<text x="95" y="82" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="start" fill="#58645f">Lockbox accuracy deltas by training-frequency band; values are percentage points.</text>
+<text x="337.5" y="125" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#1f2926">Abstract/MacBERT lockbox</text>
+<line x1="95.0" y1="533.0" x2="580.0" y2="533.0" stroke="#d9ded7" stroke-width="1" opacity="1"/>
+<text x="80.0" y="539.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="end" fill="#1f2926">-2</text>
+<line x1="95.0" y1="439.0" x2="580.0" y2="439.0" stroke="#d9ded7" stroke-width="1" opacity="1"/>
+<text x="80.0" y="445.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="end" fill="#1f2926">-1</text>
+<line x1="95.0" y1="345.0" x2="580.0" y2="345.0" stroke="#d9ded7" stroke-width="1" opacity="1"/>
+<text x="80.0" y="351.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="end" fill="#1f2926">0</text>
+<line x1="95.0" y1="251.0" x2="580.0" y2="251.0" stroke="#d9ded7" stroke-width="1" opacity="1"/>
+<text x="80.0" y="257.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="end" fill="#1f2926">1</text>
+<line x1="95.0" y1="157.0" x2="580.0" y2="157.0" stroke="#d9ded7" stroke-width="1" opacity="1"/>
+<text x="80.0" y="163.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" text-anchor="end" fill="#1f2926">2</text>
+<line x1="95.0" y1="345.0" x2="580.0" y2="345.0" stroke="#333" stroke-width="1.8" opacity="1"/>
+<line x1="95.0" y1="110" x2="95.0" y2="580" stroke="#333" stroke-width="1.4" opacity="1"/>
+<line x1="580.0" y1="110" x2="580.0" y2="580" stroke="#333" stroke-width="1.4" opacity="1"/>
+<line x1="95.0" y1="580" x2="580.0" y2="580" stroke="#333" stroke-width="1.4" opacity="1"/>
+<rect x="133.3" y="242.3" width="85" height="102.7" fill="#2d6656" stroke="#333" stroke-width="1" opacity="0.96"/>
+<text x="175.83333333333331" y="234.2677595628414" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#1f2926">+1.09</text>
+<text x="175.83333333333331" y="616" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2926">Tail</text>
+<rect x="295.0" y="225.3" width="85" height="119.7" fill="#96a889" stroke="#333" stroke-width="1" opacity="0.96"/>
+<text x="337.5" y="217.2547770700637" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#1f2926">+1.27</text>
+<text x="337.5" y="616" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2926">Mid</text>
+<rect x="456.7" y="345.0" width="85" height="27.1" fill="#a46a5f" stroke="#333" stroke-width="1" opacity="0.96"/>
+<text x="499.1666666666667" y="392.0698344132467" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#1f2926">-0.29</text>
+<text x="499.1666666666667" y="616" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2926">Head</text>
+<text x="917.5" y="125" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#1f2926">Title/MacBERT lockbox</text>
+<line x1="675.0" y1="533.0" x2="1160.0" y2="533.0" stroke="#d9ded7" stroke-width="1" opacity="1"/>
+<line x1="675.0" y1="439.0" x2="1160.0" y2="439.0" stroke="#d9ded7" stroke-width="1" opacity="1"/>
+<line x1="675.0" y1="345.0" x2="1160.0" y2="345.0" stroke="#d9ded7" stroke-width="1" opacity="1"/>
+<line x1="675.0" y1="251.0" x2="1160.0" y2="251.0" stroke="#d9ded7" stroke-width="1" opacity="1"/>
+<line x1="675.0" y1="157.0" x2="1160.0" y2="157.0" stroke="#d9ded7" stroke-width="1" opacity="1"/>
+<line x1="675.0" y1="345.0" x2="1160.0" y2="345.0" stroke="#333" stroke-width="1.8" opacity="1"/>
+<line x1="675.0" y1="110" x2="675.0" y2="580" stroke="#333" stroke-width="1.4" opacity="1"/>
+<line x1="1160.0" y1="110" x2="1160.0" y2="580" stroke="#333" stroke-width="1.4" opacity="1"/>
+<line x1="675.0" y1="580" x2="1160.0" y2="580" stroke="#333" stroke-width="1.4" opacity="1"/>
+<rect x="713.3" y="146.1" width="85" height="198.9" fill="#2d6656" stroke="#333" stroke-width="1" opacity="0.96"/>
+<text x="755.8333333333334" y="138.05820105820106" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#1f2926">+2.12</text>
+<text x="755.8333333333334" y="616" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2926">Tail</text>
+<rect x="875.0" y="345.0" width="85" height="203.5" fill="#a46a5f" stroke="#333" stroke-width="1" opacity="0.96"/>
+<text x="917.5" y="568.4632034632039" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#1f2926">-2.16</text>
+<text x="917.5" y="616" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2926">Mid</text>
+<rect x="1036.7" y="323.5" width="85" height="21.5" fill="#b5beb0" stroke="#333" stroke-width="1" opacity="0.96"/>
+<text x="1079.1666666666667" y="315.5020011435102" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#1f2926">+0.23</text>
+<text x="1079.1666666666667" y="616" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2926">Head</text>
+<text x="32" y="345.0" transform="rotate(-90 32 345.0)" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" fill="#1f2926">Accuracy delta by band (points)</text>
+<text x="600.0" y="665" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="600" text-anchor="middle" fill="#1f2926">Training-frequency band</text>
+</svg>

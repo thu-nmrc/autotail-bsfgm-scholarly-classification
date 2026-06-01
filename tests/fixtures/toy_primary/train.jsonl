@@ -1,0 +1,15 @@
+{"sentence":"体育 比赛 球队 获胜","label":0,"sample_id":1}
+{"sentence":"足球 联赛 冠军 争夺","label":0,"sample_id":2}
+{"sentence":"篮球 队员 命中 三分","label":0,"sample_id":3}
+{"sentence":"教练 调整 战术 防守","label":0,"sample_id":4}
+{"sentence":"球队 备战 决赛","label":0,"sample_id":5}
+{"sentence":"新 手机 发布 芯片 升级","label":1,"sample_id":6}
+{"sentence":"人工智能 模型 推理 加速","label":1,"sample_id":7}
+{"sentence":"软件 更新 修复 漏洞","label":1,"sample_id":8}
+{"sentence":"科技 公司 发布 新 产品","label":1,"sample_id":9}
+{"sentence":"操作系统 增强 安全 能力","label":1,"sample_id":10}
+{"sentence":"股市 下跌 投资者 谨慎","label":2,"sample_id":11}
+{"sentence":"基金 经理 调整 仓位","label":2,"sample_id":12}
+{"sentence":"银行 利率 变化 引发 关注","label":2,"sample_id":13}
+{"sentence":"经济 数据 显示 消费 回暖","label":2,"sample_id":14}
+{"sentence":"企业 财报 利润 提升","label":2,"sample_id":15}
